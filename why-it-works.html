@@ -3,103 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Why It Works — Amevoca</title>
-  <style>* { margin: 0; padding: 0; box-sizing: border-box; } :root { --primary: #2C2C2A; --accent: #BA7517; --border: #D3D1C7; --bg-secondary: #FAEEDA; --text-muted: #888780; --text-secondary: #5F5E5A; } body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif; color: var(--primary); line-height: 1.7; background: white; } header { border-bottom: 1px solid var(--border); padding: 1rem 2rem; position: sticky; top: 0; background: white; z-index: 100; } .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; } .logo { font-size: 20px; font-weight: 600; color: var(--primary); text-decoration: none; } nav { display: flex; gap: 2rem; } nav a { text-decoration: none; color: var(--primary); font-size: 14px; transition: color 0.2s; } nav a:hover { color: var(--accent); } h1 { font-size: 44px; line-height: 1.2; font-family: Georgia, serif; margin: 2rem 0 1rem; } h2 { font-size: 28px; line-height: 1.3; font-family: Georgia, serif; margin: 3rem 0 1.5rem; } p { margin-bottom: 1rem; font-size: 15px; } section { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; } .highlight { background: #F9F7F2; padding: 1.5rem; border-left: 4px solid var(--accent); margin: 2rem 0; } .cta-link { display: inline-block; color: var(--accent); text-decoration: none; font-weight: 500; margin-top: 1rem; } .cta-link:hover { text-decoration: underline; } footer { border-top: 1px solid var(--border); background: #F9F7F2; padding: 3rem 2rem; margin-top: 4rem; } .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; } .footer-section h4 { font-size: 14px; font-weight: 600; margin-bottom: 1rem; color: var(--primary); } .footer-section a { display: block; font-size: 13px; color: var(--text-secondary); text-decoration: none; margin-bottom: 0.75rem; transition: color 0.2s; } .footer-section a:hover { color: var(--accent); }</style>
+  <title>why it works — amevoca</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <a href="index.html" class="logo">Amevoca</a>
-      <nav>
-        <a href="why-it-works.html">Why it works</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="products.html">Products</a>
-        <a href="founder-story.html">Founder story</a>
-        <a href="listening-test.html">Listening test</a>
-        <a href="faq.html">FAQ</a>
-      </nav>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">
+      <svg width="64" height="26" viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 120 Q90 60 120 120 Q150 180 180 120 Q210 60 240 120 Q270 180 300 120" stroke="#AFA9EC" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <path d="M300 120 Q330 60 360 120 Q390 180 420 120" stroke="#7F77DD" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <text x="458" y="148" font-family="Georgia,serif" font-size="112" fill="#1A1A18">a</text>
+      </svg>
+      <span class="nav__wordmark">amevoca</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="why-it-works.html">why it works</a></li>
+      <li><a href="science.html">science</a></li>
+      <li><a href="experiences.html">experiences</a></li>
+      <li><a href="founder-story.html">our story</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="listening-test.html">listening test</a></li>
+      <li><a href="faq.html">faq</a></li>
+    </ul>
+    <a class="nav__order" href="preorder.html">pre-order</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="label"><span class="label-num">—</span> amevoca / why it works</span>
+    <h1>Sound is more complex<br>than it seems.</h1>
+    <p class="sub">Your voice carries a melody that tells people how you feel. The problem isn't you — it's that the melody disappears before it arrives.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">01 —</span> your voice</span>
+    <h2>A cascade of frequencies, each doing something different.</h2>
+    <p style="margin:1.25rem 0;">Human speech is not a single tone. It's a rich chord — dozens of frequencies layered on top of each other. At the base is the fundamental pitch (F0): the note your vocal cords produce. Above it, a rising stack of harmonics, each at a precise multiple of that frequency.</p>
+    <p>Intonation — the melody of speech — rides on F0. It rises when you ask a question. Softens when you're being gentle. Sharpens when you're being serious. It's the signal underneath the words that tells people how you actually feel.</p>
+    <p>It's also the signal that doesn't survive the room.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">02 —</span> the physics</span>
+    <h2>Intonation melody is physically absent at social distances.</h2>
+    <p style="margin:1.25rem 0;">Sound propagates spherically. Low frequencies — including the fundamental pitch that carries intonation melody — dissipate fastest over distance. At intimate range (under half a meter), intonation melody is present and clear. At social distances — across a table, in a meeting, in a classroom — it is physically gone.</p>
+    <p>This is not a flaw. It is physics. No one is at fault. But the effect is real, and consequential.</p>
+
+    <div class="callout" style="margin-top:2rem;">
+      <p><strong>The missing fundamental illusion (MFI):</strong> When the fundamental pitch is absent, the brain doesn't register silence. It fills the gap automatically — reconstructing the missing pitch from the harmonics that remain. For most people, this reconstruction is reliable. For a significant number, it produces a confident misreading.</p>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section>
-    <h1>Why it works</h1>
-    <p style="font-size: 18px; color: var(--text-secondary); margin-top: 0;">The physics of intonation pitch, how your brain reconstructs it, and why Amevoca addresses what others don't.</p>
-  </section>
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">03 —</span> the listener's problem</span>
+    <h2>Brains reconstruct what isn't there. And they're not always right.</h2>
+    <p style="margin:1.25rem 0 2rem;">When intonation melody is absent, the auditory cortex infers the missing fundamental from harmonic content. This inference happens automatically, invisibly, and — critically — with full confidence. The listener experiences the reconstructed emotional tone as direct perception. There is no flicker of doubt.</p>
 
-  <section style="background: var(--bg-secondary); padding: 3rem 2rem; margin-bottom: 2rem;">
-    <h2 style="margin-top: 0;">The problem with how we hear</h2>
-    <p>The emotional layer of speech — intonation pitch — is physically absent at normal social distances. It's not weakened or subtle. It's effectively gone. Your brain fills in what's missing, automatically and invisibly.</p>
-    <p>For most people, this reconstruction is accurate. They feel warmth as warmth, anger as anger, sadness as sadness. But for a significant number of people, that reconstruction is distorted. Not absent — distorted. Their brain produces a confident reading of the emotional content that may bear little relationship to what was intended.</p>
-  </section>
-
-  <section>
-    <h2>The physics</h2>
-    <p>A human voice is one of the most complex sounds in nature. What sounds like a single note is actually a rich cascade of frequencies: the intonation pitch (the lowest, most fundamental component) accompanied by a shimmering series of harmonics, each one a multiple of the first.</p>
-    <p>These components don't all travel equally. Higher frequencies, with their shorter wavelengths, can be directed by an aperture as small as a mouth — they beam forward toward the listener. But the intonation pitch, with its much longer wavelength, cannot be aimed the same way. It propagates spherically and dissipates so quickly that beyond about a meter, it's effectively gone.</p>
-    <div class="highlight"><strong>Intonation pitch is only prominent at distances closer than social norms permit between anyone who isn't a lover or a young child held close.</strong></div>
-    <p>For colleagues, friends, acquaintances, the people we spend most of our waking lives talking to — intonation pitch has always been absent from the signal.</p>
-  </section>
-
-  <section>
-    <h2>How the brain reconstructs it</h2>
-    <p>Whatever emotional meaning a listener perceives in normal social conversation is not received directly. It is reconstructed — by the brain, from the harmonics that did arrive, automatically and invisibly. This process is called the Missing Fundamental Illusion (MFI).</p>
-    <p>For people with accurate reconstruction, this works remarkably well. The perceived intonation closely matches what was intended. The emotional nuance lands.</p>
-    <p>For people with less reliable reconstruction, the reconstruction is distorted. They don't experience silence where intonation pitch was. They experience something else — a different mood, a different intent, a confident misreading that feels, to them, exactly like the truth.</p>
-    <p><strong>An important note:</strong> Sometimes the problem isn't the person's perception — it's the acoustic information available. A student who struggled with communication in speaking (loud, interrupting, seeming pushy) could sing beautifully, because her chest voice naturally produced rich harmonics that made her intonation easier to reconstruct. Her intonation pitch was equally clear in both contexts, but listeners could only perceive it reliably when the harmonic structure supported reconstruction. This shows that intonation clarity depends not just on perception, but on the acoustic environment. Amevoca addresses this directly: it makes intonation audible regardless of harmonic structure.</p>
-  </section>
-
-  <section>
-    <h2>Why speakers are also affected</h2>
-    <p>The same physics applies to how speakers hear their own voices. The intonation pitch doesn't travel to your own ears reliably either. Without clear intonation pitch feedback, modulating your intonation is like trying to tune an instrument through a funhouse mirror.</p>
-    <p>Your intentions are genuine. The feedback that would let you act on them accurately simply isn't arriving.</p>
-  </section>
-
-  <section>
-    <h2>The broadcast discovery</h2>
-    <p>Almost everyone believes they hear others' intonation accurately. And in mediated contexts — television, radio, film, recorded music — they may well be right. Close-micing delivers intonation pitch intact.</p>
-    <p>Hi-fi reproduction extended to low frequencies in the 1960s, normalizing the experience of full-spectrum voice for entire populations. The broadcast industry discovered empirically that close-miced voices — with full intonation pitch intact — produce calm, trust, and warmth. Not stress. The classic broadcast voice isn't a technique. It's what a voice sounds like when intonation pitch actually arrives.</p>
-    <p>For people with less reliable reconstruction, emotional nuance in media works perfectly well. It only fails in real life, at social distances — quietly, invisibly, and without anyone knowing why.</p>
-  </section>
-
-  <section>
-    <h2>How Amevoca addresses it</h2>
-    <p>Amevoca (from Latin <em>ame</em> = love, <em>voca</em> = voice) implements Intonation Augmentation (IA) — an acoustic process that delivers the intonation pitch that physics removed. When you're hearing your own voice, IA provides clarifying feedback: you can finally hear what you're producing and shape it as you intend. When you're hearing others, IA clarifies what arrives: their emotional content reaches you directly, accurately, without requiring your brain to reconstruct it from incomplete information.</p>
-    <p>The result is simple: both speaker and listener have what they need. Your care, finally heard.</p>
-    <a href="listening-test.html" class="cta-link">→ Take the listening test to see what we're addressing</a>
-  </section>
-
-  <section style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; margin-top: 3rem;">
-    <h3 style="margin-top: 0;">Want to understand the science more deeply?</h3>
-    <p style="margin-bottom: 0;">We have a comprehensive science page with detailed explanations for curious minds, technical details for engineers, and research connections for scientists and clinicians.</p>
-    <a href="science.html" class="cta-link">→ Explore the science</a>
-  </section>
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Learn</h4>
-        <a href="why-it-works.html">Why it works</a>
-        <a href="science.html">Science deep dive</a>
-        <a href="founder-story.html">Founder story</a>
-      </div>
-      <div class="footer-section">
-        <h4>Explore</h4>
-        <a href="experiences.html">Real experiences</a>
-        <a href="products.html">Products</a>
-        <a href="listening-test.html">Listening test</a>
-      </div>
-      <div class="footer-section">
-        <h4>Get Started</h4>
-        <a href="pre-order.html">Pre-order</a>
-        <a href="faq.html">FAQ</a>
-        <a href="mailto:eric@freudensong.com">Contact</a>
+    <div class="numbered">
+      <span class="numbered__n">01</span>
+      <div>
+        <h3>The harmonics arrive</h3>
+        <p>What reaches the listener at social distance is a complex stack of overtones — without the fundamental pitch that shaped them.</p>
       </div>
     </div>
-    <div style="max-width: 1200px; margin: 2rem auto 0; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--text-muted);">
-      <p>&copy; 2026 Freudensong LLC. All rights reserved.</p>
-      <p style="font-size: 11px; margin-top: 0.75rem;">Amevoca™ and Love your voice™ are trademarks of Freudensong LLC.</p>
-      <p style="font-size: 11px; margin-top: 0.75rem; color: var(--accent);">Amevoca: from Latin <em>ame</em> (love) + <em>voca</em> (voice) = love your voice</p>
+    <div class="numbered">
+      <span class="numbered__n">02</span>
+      <div>
+        <h3>The brain reconstructs</h3>
+        <p>Automatically and invisibly, the auditory cortex infers the missing fundamental. For many people, this is accurate. For a significant number, the reconstruction is distorted.</p>
+      </div>
     </div>
-  </footer>
+    <div class="numbered">
+      <span class="numbered__n">03</span>
+      <div>
+        <h3>The misreading feels like truth</h3>
+        <p>The listener experiences the reconstructed emotional tone as what actually happened. They heard what they heard. Except the signal they received was incomplete, and their inference was wrong.</p>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:1rem;">
+      <p>Someone says "that's clever" with a bored, done tone. You reconstruct it as genuine interest. You keep talking. They disengage. You are responding to a conversation that doesn't exist. This happens quietly, continuously, across every social relationship you have.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">04 —</span> the speaker's problem</span>
+    <h2>Without accurate information, producing your intended tone is guesswork.</h2>
+    <p style="margin:1.25rem 0;">The problem runs in both directions. As a speaker, the emotional information you receive about what you're producing is the intonation melody you hear yourself make. But at social distances, that melody is absent from the signal other people receive.</p>
+    <p>Without a reliable information loop, you cannot adjust. You might think you sound warm. You sound flat. You think you sound enthusiastic. You sound pedantic. Your intentions are genuine. The feedback you're receiving isn't accurate.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">05 —</span> the solution</span>
+    <h2>Intonation Augmentation: deliver what was never there.</h2>
+    <div style="max-width:520px;margin:1.5rem 0 2rem;">
+      <img src="img/processor-angle.jpg" alt="Amevoca processor — angled view showing speaker grille and controls" class="product-img product-img--shadow">
+      <p class="img-caption">amevoca processor — speaker grille and control face</p>
+    </div>
+    <p style="margin:1.25rem 0;">Amevoca is a room acoustics device. It captures vocal signal from close range — before intonation melody dissipates — and delivers it acoustically back into the room at conversational distance. Intonation melody becomes present in a space where it has never previously existed.</p>
+    <p>This is not restoration. Not a door that was always there. For people who have never experienced clear intonation in normal social conversation, it is a new room, entered for the first time.</p>
+
+    <div class="grid-2" style="margin-top:2rem;">
+      <div>
+        <h4>listeners receive</h4>
+        <p style="margin-top:.75rem;">Clear intonation melody — not reconstructed, not inferred. Accurate emotional perception. The warmth, care, and intent in someone's voice become legible.</p>
+      </div>
+      <div>
+        <h4>speakers produce</h4>
+        <p style="margin-top:.75rem;">With accurate intonation information available, speakers can perceive and shape what they're actually producing. The funhouse mirror is replaced with a clear one.</p>
+      </div>
+    </div>
+
+    <div class="callout callout--purple" style="margin-top:2rem;">
+      <p>No interface to manage. No mode to enter. No explanation to offer. Like eyeglasses — the augmentation disappears into the experience it enables. <strong>Simply present.</strong></p>
+    </div>
+
+    <div class="btns mt">
+      <a class="btn btn--primary" href="science.html">go deeper: the science</a>
+      <a class="btn btn--outline" href="listening-test.html">take the listening test</a>
+      <a class="btn btn--outline" href="preorder.html">pre-order</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <ul class="foot__links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="why-it-works.html">why it works</a></li>
+      <li><a href="science.html">science</a></li>
+      <li><a href="experiences.html">experiences</a></li>
+      <li><a href="founder-story.html">our story</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="listening-test.html">listening test</a></li>
+      <li><a href="other-approaches.html">other approaches</a></li>
+      <li><a href="faq.html">faq</a></li>
+      <li><a href="preorder.html">pre-order</a></li>
+    </ul>
+    <div class="foot__copy">
+      <p>questions → <a href="mailto:eric@freudensong.com">eric@freudensong.com</a><br>
+      we read every email. reply within 48 hours.</p>
+      <br>
+      <p>amevoca™ and love your voice™ are trademarks<br>
+      of freudensong llc. el paso, tx.</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

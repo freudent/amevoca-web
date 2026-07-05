@@ -3,89 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Listening Test — Amevoca</title>
-  <style>* { margin: 0; padding: 0; box-sizing: border-box; } :root { --primary: #2C2C2A; --accent: #BA7517; --border: #D3D1C7; --bg-secondary: #FAEEDA; --text-muted: #888780; --text-secondary: #5F5E5A; } body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif; color: var(--primary); line-height: 1.7; background: white; } header { border-bottom: 1px solid var(--border); padding: 1rem 2rem; position: sticky; top: 0; background: white; z-index: 100; } .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; } .logo { font-size: 20px; font-weight: 600; color: var(--primary); text-decoration: none; } nav { display: flex; gap: 2rem; } nav a { text-decoration: none; color: var(--primary); font-size: 14px; transition: color 0.2s; } nav a:hover { color: var(--accent); } h1 { font-size: 44px; line-height: 1.2; font-family: Georgia, serif; margin: 2rem 0 1rem; } h2 { font-size: 28px; line-height: 1.3; font-family: Georgia, serif; margin: 3rem 0 1.5rem; } p { margin-bottom: 1rem; font-size: 15px; } section { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; } .test-placeholder { background: #E8E8E8; border: 2px dashed var(--border); border-radius: 8px; padding: 4rem 2rem; text-align: center; margin: 3rem 0; } .test-placeholder h3 { color: var(--text-muted); margin: 0 0 1rem 0; } .test-placeholder p { color: var(--text-muted); margin: 0; } .highlight { background: #F9F7F2; padding: 1.5rem; border-left: 4px solid var(--accent); margin: 2rem 0; } .button { display: inline-block; background: var(--accent); color: white; padding: 0.875rem 2rem; border-radius: 4px; border: none; font-weight: 500; font-size: 16px; cursor: pointer; text-decoration: none; margin-top: 1rem; } .button:hover { background: #C88A1D; } footer { border-top: 1px solid var(--border); background: #F9F7F2; padding: 3rem 2rem; margin-top: 4rem; } .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; } .footer-section h4 { font-size: 14px; font-weight: 600; margin-bottom: 1rem; color: var(--primary); } .footer-section a { display: block; font-size: 13px; color: var(--text-secondary); text-decoration: none; margin-bottom: 0.75rem; transition: color 0.2s; } .footer-section a:hover { color: var(--accent); }</style>
+  <title>listening test — amevoca</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .test-block {
+      border: 1px solid var(--bg-rule);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      border-radius: var(--r);
+    }
+    .test-block h3 { margin-bottom: .75rem; }
+    .test-block .phase-label {
+      font-family: var(--mono);
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: .5rem;
+      display: block;
+    }
+    .profile {
+      padding: 1.75rem 0;
+      border-top: 1px solid var(--bg-rule);
+    }
+    .profile:last-child { border-bottom: 1px solid var(--bg-rule); }
+    .profile__id {
+      font-family: var(--mono);
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: .5rem;
+    }
+    .profile h3 { margin-bottom: .5rem; }
+    .profile p { color: var(--text-muted); font-size: .95rem; }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <a href="index.html" class="logo">Amevoca</a>
-      <nav>
-        <a href="why-it-works.html">Why it works</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="products.html">Products</a>
-        <a href="founder-story.html">Founder story</a>
-        <a href="listening-test.html">Listening test</a>
-        <a href="faq.html">FAQ</a>
-      </nav>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">
+      <svg width="64" height="26" viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 120 Q90 60 120 120 Q150 180 180 120 Q210 60 240 120 Q270 180 300 120" stroke="#AFA9EC" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <path d="M300 120 Q330 60 360 120 Q390 180 420 120" stroke="#7F77DD" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <text x="458" y="148" font-family="Georgia,serif" font-size="112" fill="#1A1A18">a</text>
+      </svg>
+      <span class="nav__wordmark">amevoca</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="why-it-works.html">why it works</a></li>
+      <li><a href="science.html">science</a></li>
+      <li><a href="experiences.html">experiences</a></li>
+      <li><a href="founder-story.html">our story</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="listening-test.html">listening test</a></li>
+      <li><a href="faq.html">faq</a></li>
+    </ul>
+    <a class="nav__order" href="preorder.html">pre-order</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="label"><span class="label-num">—</span> amevoca / listening test</span>
+    <h1>Can you hear what<br>others feel?</h1>
+    <p class="sub">A short psychoacoustic test that assesses how reliably your brain reconstructs intonation melody from harmonic information. Free. Anonymous. Takes about five minutes.</p>
+    <p style="margin-top:1rem;font-family:var(--mono);font-size:.75rem;color:rgba(255,255,255,.35);">headphones recommended &nbsp;·&nbsp; normal hearing required &nbsp;·&nbsp; no account needed</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">01 —</span> before you begin</span>
+    <h2>What this test measures.</h2>
+    <p style="margin:1.25rem 0;">The test assesses Missing Fundamental Illusion (MFI) reconstruction reliability — how accurately your auditory cortex reconstructs a fundamental pitch from its harmonics when the fundamental is absent. This is the same mechanism that determines how reliably you receive (and transmit) emotional information in speech.</p>
+    <p>Results are anonymous. We generate a reference number you can save — this lets you connect your baseline to any future results or research we publish.</p>
+
+    <div class="callout">
+      <p><strong>For best results:</strong> Use headphones in a quiet environment. The test uses tonal pairs — you'll judge which of two tones sounds higher in pitch. There are no trick questions. Answer what you hear.</p>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section>
-    <h1>Listening test</h1>
-    <p style="font-size: 18px; color: var(--text-secondary); margin-top: 0;">Two minutes to understand what Amevoca addresses.</p>
-  </section>
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">02 —</span> the test structure</span>
+    <h2>Two parts. About 5 minutes total.</h2>
+    <p style="margin:1.25rem 0 2rem;" class="muted">The test is administered by Natasha and the Amevoca team. The interactive version will be live at launch. Below is a description of what to expect.</p>
 
-  <section>
-    <h2>How it works</h2>
-    <p>You'll hear two versions of the same speech sample. One without intonation pitch (what many people perceive in normal conversation). One with intonation pitch restored (what Amevoca enables).</p>
-    <p>Your job: listen carefully to both and notice the difference in emotional perception. Pay attention to how your brain interprets the emotional content of each version.</p>
-  </section>
-
-  <section>
-    <h2>What you'll discover</h2>
-    <div class="highlight">
-      <p><strong>If your perception is typical:</strong> The difference is subtle. You'll notice the restored version sounds warmer and more emotionally present, but you already perceive the emotional content fairly well without it.</p>
-      <p><strong>If your perception is less typical:</strong> The difference is dramatic. Without intonation pitch, the emotional content may seem neutral, cold, or even opposite from what's intended. With it restored, the actual intent becomes clear — and sometimes surprising.</p>
+    <div class="test-block">
+      <span class="phase-label">part one — warmup</span>
+      <h3>Four tone pairs with F0 present.</h3>
+      <p>You'll hear pairs of tones and identify which sounds higher. In the warmup, the fundamental pitch (F0) is present in both tones. This calibrates your responses and confirms the test is working as expected.</p>
     </div>
-  </section>
 
-  <section>
-    <h2>Ready?</h2>
-    <div class="test-placeholder">
-      <h3>Interactive Listening Test</h3>
-      <p>Audio samples and assessment questionnaire — coming soon</p>
+    <div class="test-block">
+      <span class="phase-label">part two — the interesting part</span>
+      <h3>Four tone pairs with F0 absent.</h3>
+      <p>The same task — which tone sounds higher — but now the fundamental pitch has been removed from one or both tones. Your answer reveals how your auditory cortex reconstructs the missing fundamental from harmonics alone. This is where the meaningful data is.</p>
     </div>
-    <p style="font-size: 14px; color: var(--text-muted); text-align: center;">The test takes about 2 minutes and requires audio playback capability.</p>
-  </section>
 
-  <section>
-    <h2>Why this matters</h2>
-    <p>Most people assume everyone perceives emotional content in speech the same way. This test makes visible what's usually invisible: significant variation in how brains reconstruct intonation pitch from incomplete acoustic information.</p>
-    <p>This variation isn't a deficiency. It's simply how some nervous systems work. And Amevoca is designed specifically to make up the difference.</p>
-  </section>
-
-  <section style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; margin-top: 3rem;">
-    <h2 style="margin-top: 0;">Questions?</h2>
-    <p>For more technical background on the Missing Fundamental Illusion and intonation pitch perception, check out the <a href="why-it-works.html" style="color: var(--accent); font-weight: 500;">Why it works</a> page or our <a href="science.html" style="color: var(--accent); font-weight: 500;">science deep dive</a>.</p>
-  </section>
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Learn</h4>
-        <a href="why-it-works.html">Why it works</a>
-        <a href="science.html">Science deep dive</a>
-        <a href="founder-story.html">Founder story</a>
-      </div>
-      <div class="footer-section">
-        <h4>Explore</h4>
-        <a href="experiences.html">Real experiences</a>
-        <a href="products.html">Products</a>
-        <a href="listening-test.html">Listening test</a>
-      </div>
-      <div class="footer-section">
-        <h4>Get Started</h4>
-        <a href="pre-order.html">Pre-order</a>
-        <a href="faq.html">FAQ</a>
-        <a href="mailto:eric@freudensong.com">Contact</a>
-      </div>
+    <div class="test-block">
+      <span class="phase-label">after the test</span>
+      <h3>Your reference number and result profile.</h3>
+      <p>You'll receive a reference number to save. Your result will match one of three profiles below. Results are immediate and anonymous.</p>
     </div>
-    <div style="max-width: 1200px; margin: 2rem auto 0; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--text-muted);">
-      <p>&copy; 2026 Freudensong LLC. All rights reserved.</p>
-      <p style="font-size: 11px; margin-top: 0.75rem;">Amevoca™ and Love your voice™ are trademarks of Freudensong LLC.</p>
-      <p style="font-size: 11px; margin-top: 0.75rem; color: var(--accent);">Amevoca: from Latin <em>ame</em> (love) + <em>voca</em> (voice) = love your voice</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">03 —</span> result profiles</span>
+    <h2>What your results may suggest.</h2>
+    <p style="margin:1.25rem 0 2rem;" class="muted">These profiles are indicative, not diagnostic. We'd rather you know before you buy.</p>
+
+    <div class="profile">
+      <div class="profile__id">profile A</div>
+      <h3>Strong reconstruction.</h3>
+      <p>Your brain reconstructs intonation melody accurately from harmonic information. Intonation Augmentation may not be what you need. If you're still experiencing communication friction, the source may be elsewhere — and the <a href="other-approaches.html">other approaches page</a> may be more useful.</p>
     </div>
-  </footer>
+    <div class="profile">
+      <div class="profile__id">profile B</div>
+      <h3>Reconstruction in an unexpected direction.</h3>
+      <p>Your auditory cortex is reconstructing — but the reconstruction is systematically shifted. This is one of the profiles Amevoca is designed for. The emotional signal you receive (and transmit) is present but distorted. IA delivers the undistorted version.</p>
+    </div>
+    <div class="profile">
+      <div class="profile__id">profile C</div>
+      <h3>Reconstruction not occurring reliably.</h3>
+      <p>Your auditory system is not automatically reconstructing intonation melody from harmonics. The emotional layer of speech is arriving as noise. Intonation Augmentation was built precisely for this — delivering the melody directly, bypassing reconstruction entirely.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">04 —</span> data and research</span>
+    <h2>Your data supports population research.</h2>
+    <p style="margin:1.25rem 0;">Anonymous test results contribute to ongoing research on MFI reconstruction distribution in the general population. No personally identifiable information is collected. Your reference number is generated locally — we cannot connect it to you unless you choose to share it.</p>
+    <p>If you're a researcher interested in the dataset or in collaboration, contact <a href="mailto:eric@freudensong.com">eric@freudensong.com</a>.</p>
+
+    <div class="btns mt">
+      <a class="btn btn--primary" href="preorder.html">pre-order</a>
+      <a class="btn btn--outline" href="why-it-works.html">how it works</a>
+      <a class="btn btn--outline" href="science.html">the science</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <ul class="foot__links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="why-it-works.html">why it works</a></li>
+      <li><a href="science.html">science</a></li>
+      <li><a href="experiences.html">experiences</a></li>
+      <li><a href="founder-story.html">our story</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="listening-test.html">listening test</a></li>
+      <li><a href="other-approaches.html">other approaches</a></li>
+      <li><a href="faq.html">faq</a></li>
+      <li><a href="preorder.html">pre-order</a></li>
+    </ul>
+    <div class="foot__copy">
+      <p>questions → <a href="mailto:eric@freudensong.com">eric@freudensong.com</a><br>
+      we read every email. reply within 48 hours.</p>
+      <br>
+      <p>amevoca™ and love your voice™ are trademarks<br>
+      of freudensong llc. el paso, tx.</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

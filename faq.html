@@ -3,121 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ — Amevoca</title>
-  <style>* { margin: 0; padding: 0; box-sizing: border-box; } :root { --primary: #2C2C2A; --accent: #BA7517; --border: #D3D1C7; --bg-secondary: #FAEEDA; --text-muted: #888780; --text-secondary: #5F5E5A; } body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif; color: var(--primary); line-height: 1.7; background: white; } header { border-bottom: 1px solid var(--border); padding: 1rem 2rem; position: sticky; top: 0; background: white; z-index: 100; } .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; } .logo { font-size: 20px; font-weight: 600; color: var(--primary); text-decoration: none; } nav { display: flex; gap: 2rem; } nav a { text-decoration: none; color: var(--primary); font-size: 14px; transition: color 0.2s; } nav a:hover { color: var(--accent); } h1 { font-size: 44px; line-height: 1.2; font-family: Georgia, serif; margin: 2rem 0 1rem; } h2 { font-size: 28px; line-height: 1.3; font-family: Georgia, serif; margin: 3rem 0 1.5rem; } h3 { font-size: 16px; font-weight: 600; margin: 2rem 0 0.75rem; } p { margin-bottom: 1rem; font-size: 15px; } section { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; } .faq-item { padding: 1.5rem; background: #F9F7F2; border-radius: 8px; margin: 1.5rem 0; } .faq-item h3 { margin-top: 0; color: var(--accent); } footer { border-top: 1px solid var(--border); background: #F9F7F2; padding: 3rem 2rem; margin-top: 4rem; } .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; } .footer-section h4 { font-size: 14px; font-weight: 600; margin-bottom: 1rem; color: var(--primary); } .footer-section a { display: block; font-size: 13px; color: var(--text-secondary); text-decoration: none; margin-bottom: 0.75rem; transition: color 0.2s; } .footer-section a:hover { color: var(--accent); }</style>
+  <title>faq — amevoca</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <a href="index.html" class="logo">Amevoca</a>
-      <nav>
-        <a href="why-it-works.html">Why it works</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="products.html">Products</a>
-        <a href="founder-story.html">Founder story</a>
-        <a href="listening-test.html">Listening test</a>
-        <a href="faq.html">FAQ</a>
-      </nav>
-    </div>
-  </header>
 
-  <section>
-    <h1>Frequently asked questions</h1>
-  </section>
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">
+      <svg width="64" height="26" viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 120 Q90 60 120 120 Q150 180 180 120 Q210 60 240 120 Q270 180 300 120" stroke="#AFA9EC" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <path d="M300 120 Q330 60 360 120 Q390 180 420 120" stroke="#7F77DD" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <text x="458" y="148" font-family="Georgia,serif" font-size="112" fill="#1A1A18">a</text>
+      </svg>
+      <span class="nav__wordmark">amevoca</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="why-it-works.html">why it works</a></li>
+      <li><a href="science.html">science</a></li>
+      <li><a href="experiences.html">experiences</a></li>
+      <li><a href="founder-story.html">our story</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="listening-test.html">listening test</a></li>
+      <li><a href="faq.html">faq</a></li>
+    </ul>
+    <a class="nav__order" href="preorder.html">pre-order</a>
+  </div>
+</nav>
 
-  <section>
-    <div class="faq-item">
-      <h3>What is intonation pitch?</h3>
-      <p>The lowest, most fundamental frequency in your voice — the note you're singing, the emotional coloring of your speech. It's the component that carries emotional content. In normal speech, it's also the component that dissipates so quickly that it's absent at social distances.</p>
-    </div>
+<section class="hero">
+  <div class="wrap">
+    <span class="label"><span class="label-num">—</span> amevoca / faq</span>
+    <h1>Frequently asked questions.</h1>
+    <p class="sub">If your question isn't here, email <a href="mailto:eric@freudensong.com" style="color:var(--purple-a);">eric@freudensong.com</a>. We read everything and reply within 48 hours.</p>
+  </div>
+</section>
 
-    <div class="faq-item">
-      <h3>Will Amevoca work for me?</h3>
-      <p>If you've noticed your voice doesn't come across as you intend, or if you watch videos of yourself and don't recognize your emotional content, Amevoca addresses exactly this. If you're curious about your own intonation perception, take the listening test. It will give you a concrete sense of what we're addressing.</p>
+<section class="sec">
+  <div class="wrap">
+    <span class="label" style="margin-bottom:2rem;"><span class="label-num">01 —</span> how it works</span>
+    <div class="faq">
+      <details>
+        <summary>What does Amevoca actually do?</summary>
+        <div class="ans"><p>Amevoca is a room acoustics device implementing Intonation Augmentation (IA). It captures vocal signal before intonation melody dissipates at social distances, and delivers it back into the room acoustically — so both speakers and listeners receive clear intonation melody throughout conversation. There is no app, no interface, no mode to enter. It is simply present.</p></div>
+      </details>
+      <details>
+        <summary>How does it deliver intonation melody?</summary>
+        <div class="ans"><p>A processor unit captures near-field vocal signal where the fundamental pitch (F0) is present. It processes this to isolate and amplify intonation melody, then delivers it into the room via a speaker positioned at conversational distance. The result is ambient — all participants receive it simultaneously. No headphones. No personal device required.</p></div>
+      </details>
+      <details>
+        <summary>Do other people in the room notice it?</summary>
+        <div class="ans"><p>Almost nothing to see. Visual and sonic invisibility are intentional design features. Early users describe conversations where no one mentioned the device — they just noticed the conversation felt different. The speaker is small and sits on a shelf or desk.</p></div>
+      </details>
+      <details>
+        <summary>Does it work with headphones or earbuds?</summary>
+        <div class="ans"><p>No — and deliberately so. Amevoca is a room acoustics approach. Headphones change the dynamic of conversation. Amevoca works with the room, not against it.</p></div>
+      </details>
+      <details>
+        <summary>Is there any setup involved?</summary>
+        <div class="ans"><p>Minimal. Connect processor to speaker via the included cable, power via USB, and place the speaker within conversational range. No pairing, no app, no calibration sequence. The welcome card from Eric walks you through it.</p></div>
+      </details>
     </div>
+  </div>
+</section>
 
-    <div class="faq-item">
-      <h3>How long does it take to see results?</h3>
-      <p>Most people notice differences immediately — the room sounds warmer, conversations feel different. Deeper changes (learning to modulate your own intonation, others consistently understanding you better) typically emerge over weeks as you use it regularly.</p>
+<section class="sec">
+  <div class="wrap">
+    <span class="label" style="margin-bottom:2rem;"><span class="label-num">02 —</span> will it help me</span>
+    <div class="faq">
+      <details>
+        <summary>How do I know if this is for me?</summary>
+        <div class="ans"><p>Take the <a href="listening-test.html">listening test</a>. It's a short psychoacoustic assessment that measures how reliably your auditory cortex reconstructs intonation melody from harmonic information. Results are immediate and anonymous. We built the test specifically so you don't have to guess.</p></div>
+      </details>
+      <details>
+        <summary>Is this a medical device or therapy?</summary>
+        <div class="ans"><p>No. Amevoca is a wellness tool that supports effective communication. It doesn't replace professional care and is not positioned as a treatment for any condition. If you're working with a clinician or therapist, we welcome you to explore Amevoca in conversation with them — not instead of them.</p></div>
+      </details>
+      <details>
+        <summary>Can I use it alongside speech therapy or communication coaching?</summary>
+        <div class="ans"><p>Yes — they address different things and can be complementary. Speech therapy works on production strategies and technique. Amevoca addresses the signal itself. Bring it into the conversation with your therapist.</p></div>
+      </details>
+      <details>
+        <summary>What about Forbrain and similar approaches?</summary>
+        <div class="ans"><p>Forbrain and polyvagal-based approaches target nervous system stress response directly, via bone conduction. Amevoca targets intonation melody identification — a different mechanism, likely addressing a different population. If one hasn't worked for you, the other may address something different entirely. See <a href="other-approaches.html">other approaches</a> for our full thinking on this.</p></div>
+      </details>
     </div>
+  </div>
+</section>
 
-    <div class="faq-item">
-      <h3>Home or Go — which should I get?</h3>
-      <p>Home if you spend most of your time in one space (office, home, studio). Go if you move between locations (coffee shops, offices, travel). Both contain identical processing. The choice is about lifestyle, not features.</p>
+<section class="sec">
+  <div class="wrap">
+    <span class="label" style="margin-bottom:2rem;"><span class="label-num">03 —</span> products and ordering</span>
+    <div class="faq">
+      <details>
+        <summary>What's the difference between Home and Go?</summary>
+        <div class="ans"><p>Same Intonation Augmentation technology. Home uses a bookshelf speaker and 3m cable — suited for living rooms and domestic spaces. Go uses a compact speaker and 50cm cable with USB power bank — suited for desks, classrooms, and offices. See <a href="products.html">products</a> for a full comparison.</p></div>
+      </details>
+      <details>
+        <summary>What's the locker issue with Amevoca Go?</summary>
+        <div class="ans"><p>Amevoca Go is sensitive to closed, hard-surfaced spaces — specifically lockers. The acoustics in an enclosed hard-walled space can cause feedback. Mute the unit before placing it in a locker. We tell people this upfront because we'd rather you know than discover it.</p></div>
+      </details>
+      <details>
+        <summary>Can I use it at work without explaining it to colleagues?</summary>
+        <div class="ans"><p>Yes. The device is small and unobtrusive. You are not required to explain it to anyone. Most early users don't. The people around them notice conversations feel different; they don't attribute it to a device.</p></div>
+      </details>
+      <details>
+        <summary>How many units do I need?</summary>
+        <div class="ans"><p>One per room. Amevoca works in the space it's in. Most users start with the room where they spend the most conversational time. Additional units extend the benefit to other rooms. Each unit is independent — no system to configure between them.</p></div>
+      </details>
     </div>
+  </div>
+</section>
 
-    <div class="faq-item">
-      <h3>Can I use it with a headset or external speakers?</h3>
-      <p>The system is designed as a complete unit — processor + speaker delivering the augmented signal back into the room. Headsets would require a different design. External speakers compatible with standard 3.5mm audio output are possible with a simple adapter (Home only).</p>
+<section class="sec">
+  <div class="wrap">
+    <span class="label" style="margin-bottom:2rem;"><span class="label-num">04 —</span> pre-order and fulfillment</span>
+    <div class="faq">
+      <details>
+        <summary>Why a deposit model?</summary>
+        <div class="ans"><p>Your deposit covers the cost of parts ordered the week you buy. This is how we stay independent — no VC funding, no overstock, no waste. You're a founding partner, not a consumer. This also means every unit is made for the person who ordered it.</p></div>
+      </details>
+      <details>
+        <summary>How long does shipping take?</summary>
+        <div class="ans"><p>Four weeks from order to delivery. Week 1: parts ordered. Weeks 1–3.5: parts arrive. Week 3.5–4: built, tested, packed, shipped. Balance payment is requested when your unit ships.</p></div>
+      </details>
+      <details>
+        <summary>Can I return it if it doesn't work for me?</summary>
+        <div class="ans"><p>Yes. Contact <a href="mailto:eric@freudensong.com">eric@freudensong.com</a> within 30 days of delivery. We'll work it out. We read every email.</p></div>
+      </details>
+      <details>
+        <summary>Is there a warranty?</summary>
+        <div class="ans"><p>Yes. We stand behind what we build. Email eric@freudensong.com for any hardware issue within the first year of delivery.</p></div>
+      </details>
+      <details>
+        <summary>Can I cancel my pre-order?</summary>
+        <div class="ans"><p>Yes, until your parts are ordered — typically end of week 1. After that, components are in transit and can't be returned to suppliers. Email immediately if you need to cancel.</p></div>
+      </details>
     </div>
+  </div>
+</section>
 
-    <div class="faq-item">
-      <h3>Is it always listening?</h3>
-      <p>The processor analyzes room audio continuously when powered on. It's always processing, always delivering intonation pitch. There's no mode to toggle, no on/off switch for the processing itself — it's seamless, like a always-on hearing aid.</p>
+<section class="sec">
+  <div class="wrap">
+    <span class="label" style="margin-bottom:2rem;"><span class="label-num">05 —</span> privacy</span>
+    <div class="faq">
+      <details>
+        <summary>Is the device listening to me?</summary>
+        <div class="ans"><p>Amevoca processes sound in real time to deliver intonation melody acoustically. It does not record audio. It does not store audio. It does not transmit audio. There is nothing to store or send — the processing happens entirely within the device itself, in the moment.</p></div>
+      </details>
+      <details>
+        <summary>Is Amevoca connected to the internet?</summary>
+        <div class="ans"><p>No. There is no Wi-Fi, no Bluetooth, no network component of any kind. The device has no way to transmit anything. A device in your home that processes conversation has no business on the internet, and ours isn't.</p></div>
+      </details>
+      <details>
+        <summary>What information does the website collect?</summary>
+        <div class="ans"><p>We collect your name, email, and shipping address to process your order and deliver your unit. We don't run ad trackers. We don't sell or share your information with third parties.</p></div>
+      </details>
+      <details>
+        <summary>What about the listening test?</summary>
+        <div class="ans"><p>The listening test is anonymous. A reference number is generated locally in your browser — we have no way to connect it to you unless you choose to share it with us. No account required.</p></div>
+      </details>
     </div>
+  </div>
+</section>
 
-    <div class="faq-item">
-      <h3>What about privacy?</h3>
-      <p>The processor doesn't record, store, or transmit audio. It analyzes sound in real-time, extracts the intonation pitch component, and outputs it locally. Nothing leaves your device.</p>
+<section class="sec sec--dark">
+  <div class="wrap">
+    <span class="label">still have a question?</span>
+    <h2>Email us. We read everything.</h2>
+    <p class="sub" style="margin:1rem 0 2rem;"><a href="mailto:eric@freudensong.com" style="color:var(--purple-a);">eric@freudensong.com</a> &nbsp;·&nbsp; response within 48 hours.</p>
+    <div class="btns">
+      <a class="btn btn--primary" href="preorder.html">pre-order</a>
+      <a class="btn btn--outline-light" href="listening-test.html">take the listening test</a>
     </div>
+  </div>
+</section>
 
-    <div class="faq-item">
-      <h3>How do I set it up?</h3>
-      <p>Unbox, plug in the power, connect the speaker (if separate), place in your room. That's it. No app, no configuration, no wireless pairing. It works immediately.</p>
+<footer class="foot">
+  <div class="foot__inner">
+    <ul class="foot__links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="why-it-works.html">why it works</a></li>
+      <li><a href="science.html">science</a></li>
+      <li><a href="experiences.html">experiences</a></li>
+      <li><a href="founder-story.html">our story</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="listening-test.html">listening test</a></li>
+      <li><a href="other-approaches.html">other approaches</a></li>
+      <li><a href="faq.html">faq</a></li>
+      <li><a href="preorder.html">pre-order</a></li>
+    </ul>
+    <div class="foot__copy">
+      <p>questions → <a href="mailto:eric@freudensong.com">eric@freudensong.com</a><br>
+      we read every email. reply within 48 hours.</p>
+      <br>
+      <p>amevoca™ and love your voice™ are trademarks<br>
+      of freudensong llc. el paso, tx.</p>
     </div>
-
-    <div class="faq-item">
-      <h3>When will I receive my pre-order?</h3>
-      <p>Within 4 weeks of placing your order. Week 1: funding secured. Weeks 2-3: parts sourced and assembly begins. Week 3-4: final assembly and shipping. We'll notify you with tracking information.</p>
-    </div>
-
-    <div class="faq-item">
-      <h3>What if I need to cancel?</h3>
-      <p>Cancel anytime before your unit ships — full refund (minus credit card processing fees). Once shipped, standard return policy applies: 30 days, full refund minus shipping cost.</p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Is there a warranty?</h3>
-      <p>1-year hardware warranty covering defects in materials and workmanship. Not covered: physical damage, water damage, misuse. Email support@freudensong.com for claims.</p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Will there be other products?</h3>
-      <p>We're focused on getting Home and Go right first. Other form factors and features may follow based on user feedback and demand. We move carefully, not quickly.</p>
-    </div>
-  </section>
-
-  <section style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; margin-top: 3rem;">
-    <h3 style="margin-top: 0;">Still have questions?</h3>
-    <p style="margin-bottom: 0;">Email us at <a href="mailto:eric@freudensong.com" style="color: var(--accent); font-weight: 500;">eric@freudensong.com</a> or check out the <a href="why-it-works.html" style="color: var(--accent); font-weight: 500;">Why it works</a> page for deeper technical details.</p>
-  </section>
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Learn</h4>
-        <a href="why-it-works.html">Why it works</a>
-        <a href="science.html">Science deep dive</a>
-        <a href="founder-story.html">Founder story</a>
-      </div>
-      <div class="footer-section">
-        <h4>Explore</h4>
-        <a href="experiences.html">Real experiences</a>
-        <a href="products.html">Products</a>
-        <a href="listening-test.html">Listening test</a>
-      </div>
-      <div class="footer-section">
-        <h4>Get Started</h4>
-        <a href="pre-order.html">Pre-order</a>
-        <a href="faq.html">FAQ</a>
-        <a href="mailto:eric@freudensong.com">Contact</a>
-      </div>
-    </div>
-    <div style="max-width: 1200px; margin: 2rem auto 0; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--text-muted);">
-      <p>&copy; 2026 Freudensong LLC. All rights reserved.</p>
-      <p style="font-size: 11px; margin-top: 0.75rem;">Amevoca™ and Love your voice™ are trademarks of Freudensong LLC.</p>
-      <p style="font-size: 11px; margin-top: 0.75rem; color: var(--accent);">Amevoca: from Latin <em>ame</em> (love) + <em>voca</em> (voice) = love your voice</p>
-    </div>
-  </footer>
+  </div>
+</footer>
 </body>
 </html>

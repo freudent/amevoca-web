@@ -3,120 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Science — Amevoca</title>
-  <style>* { margin: 0; padding: 0; box-sizing: border-box; } :root { --primary: #2C2C2A; --accent: #BA7517; --border: #D3D1C7; --bg-secondary: #FAEEDA; --text-muted: #888780; --text-secondary: #5F5E5A; } body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif; color: var(--primary); line-height: 1.7; background: white; } header { border-bottom: 1px solid var(--border); padding: 1rem 2rem; position: sticky; top: 0; background: white; z-index: 100; } .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; } .logo { font-size: 20px; font-weight: 600; color: var(--primary); text-decoration: none; } nav { display: flex; gap: 2rem; } nav a { text-decoration: none; color: var(--primary); font-size: 14px; transition: color 0.2s; } nav a:hover { color: var(--accent); } h1 { font-size: 44px; line-height: 1.2; font-family: Georgia, serif; margin: 2rem 0 1rem; } h2 { font-size: 28px; line-height: 1.3; font-family: Georgia, serif; margin: 3rem 0 1.5rem; } h3 { font-size: 18px; margin: 2rem 0 1rem; } p { margin-bottom: 1rem; font-size: 15px; } section { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; } .science-section { padding: 2rem; background: #F9F7F2; border-radius: 8px; margin: 2rem 0; } .science-section h3 { margin-top: 0; color: var(--accent); } .level-intro { font-size: 13px; color: var(--text-muted); font-style: italic; margin-bottom: 1rem; } footer { border-top: 1px solid var(--border); background: #F9F7F2; padding: 3rem 2rem; margin-top: 4rem; } .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; } .footer-section h4 { font-size: 14px; font-weight: 600; margin-bottom: 1rem; color: var(--primary); } .footer-section a { display: block; font-size: 13px; color: var(--text-secondary); text-decoration: none; margin-bottom: 0.75rem; transition: color 0.2s; } .footer-section a:hover { color: var(--accent); }</style>
+  <title>science — amevoca</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .depth-nav {
+      display: flex;
+      gap: .5rem;
+      margin: 1.5rem 0 3rem;
+      flex-wrap: wrap;
+    }
+    .depth-nav a {
+      font-family: var(--mono);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      border: 1px solid var(--bg-rule);
+      padding: .35rem .85rem;
+      border-radius: var(--r);
+      transition: border-color .15s, color .15s;
+    }
+    .depth-nav a:hover { border-color: var(--text); color: var(--text); }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <a href="index.html" class="logo">Amevoca</a>
-      <nav>
-        <a href="why-it-works.html">Why it works</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="products.html">Products</a>
-        <a href="founder-story.html">Founder story</a>
-        <a href="listening-test.html">Listening test</a>
-        <a href="faq.html">FAQ</a>
-      </nav>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">
+      <svg width="64" height="26" viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 120 Q90 60 120 120 Q150 180 180 120 Q210 60 240 120 Q270 180 300 120" stroke="#AFA9EC" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <path d="M300 120 Q330 60 360 120 Q390 180 420 120" stroke="#7F77DD" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <text x="458" y="148" font-family="Georgia,serif" font-size="112" fill="#1A1A18">a</text>
+      </svg>
+      <span class="nav__wordmark">amevoca</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="why-it-works.html">why it works</a></li>
+      <li><a href="science.html">science</a></li>
+      <li><a href="experiences.html">experiences</a></li>
+      <li><a href="founder-story.html">our story</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="listening-test.html">listening test</a></li>
+      <li><a href="faq.html">faq</a></li>
+    </ul>
+    <a class="nav__order" href="preorder.html">pre-order</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="label"><span class="label-num">—</span> amevoca / science</span>
+    <h1>Three depths.<br>Same mechanism.</h1>
+    <p class="sub">Read at the level that matches your curiosity. Each section stands on its own.</p>
+  </div>
+</section>
+
+<!-- Depth nav -->
+<section class="sec" style="padding-bottom:0;border-top:none;">
+  <div class="wrap">
+    <div class="depth-nav">
+      <a href="#curious">for the curious</a>
+      <a href="#technical">for the technical</a>
+      <a href="#neuroscience">for neuroscience-minded</a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section>
-    <h1>The science</h1>
-    <p style="font-size: 18px; color: var(--text-secondary); margin-top: 0;">Three explanations: one for each level of curiosity.</p>
-  </section>
+<!-- LEVEL 1: CURIOUS -->
+<section class="sec" id="curious">
+  <div class="wrap">
+    <span class="label"><span class="label-num">01 —</span> for the curious</span>
+    <h2>The missing fundamental illusion.</h2>
+    <p style="margin:1.25rem 0;">When a sound source produces a fundamental pitch (the lowest frequency in a harmonic series), our auditory cortex can often reconstruct that pitch even when the fundamental itself is absent — inferring it from the harmonics that remain. This is the Missing Fundamental Illusion (MFI).</p>
+    <p>In everyday conversation, intonation melody rides on the fundamental pitch. At social distances, that fundamental dissipates. What arrives at the listener's ears is the harmonic stack — without the melodic information it once carried. The brain attempts reconstruction. Whether that reconstruction is accurate varies significantly between individuals.</p>
+    <p>Amevoca addresses this by delivering intonation melody back into the room acoustically — before reconstruction is necessary.</p>
 
-  <section>
-    <h2>For the curious</h2>
-    <div class="science-section">
-      <p class="level-intro">If you want to understand what's happening without deep technical knowledge.</p>
-      
-      <h3>The Missing Fundamental Illusion (MFI)</h3>
-      <p>Your voice contains many frequencies layered together. The lowest frequency — the fundamental — is the "note" you're singing, the emotional coloring of your speech. But this frequency has a long wavelength, so it dissipates quickly in air.</p>
-      <p>At social distances, your brain never actually receives the fundamental frequency. Instead, it receives the overtones (harmonics) — the higher frequencies. Your brain is sophisticated enough to reconstruct what the fundamental *should* be based on the pattern of harmonics. This is called the Missing Fundamental Illusion.</p>
-      <p>For most people, this reconstruction is accurate. They perceive the emotional intent clearly. But for others, the reconstruction is distorted. They perceive something different from what was actually expressed.</p>
-
-      <h3>Why variation exists</h3>
-      <p>The brain's ability to reconstruct the fundamental depends on the neural pathways involved in auditory perception and emotional integration. There's significant natural variation in how brains perform this reconstruction — similar to how people vary in color perception, spatial reasoning, or music perception.</p>
-      <p>This variation isn't uncommon. Studies suggest 15-25% of the population has notably different intonation perception than the population mean.</p>
-
-      <h3>What Amevoca does</h3>
-      <p>Amevoca removes the need for reconstruction. It analyzes the incoming audio, extracts the intonation pitch component, and broadcasts it back into the room at audible levels. Now both the speaker and listener have direct access to the emotional content that was originally present.</p>
+    <div class="callout" style="margin-top:2rem;">
+      <p><strong>Why it matters for communication:</strong> Intonation melody is the primary carrier of emotional meaning in speech. It's what distinguishes a sincere "thank you" from a sarcastic one; what signals a question from a statement; what carries warmth, frustration, care, or boredom. Without it, words are ambiguous.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <h2>For the technical</h2>
-    <div class="science-section">
-      <p class="level-intro">If you're an engineer, audio scientist, or technical professional.</p>
+<!-- LEVEL 2: TECHNICAL -->
+<section class="sec" id="technical">
+  <div class="wrap">
+    <span class="label"><span class="label-num">02 —</span> for the technical</span>
+    <h2>Signal, mechanism, and specifications.</h2>
+    <p style="margin:1.25rem 0;">The human voice produces a complex harmonic series rooted at the fundamental frequency F0 — the instantaneous pitch produced by vocal fold vibration. F0 typically spans 85–255 Hz in adult speech, with the full harmonic series extending several kilohertz above it.</p>
+    <p>Spherical propagation causes sound intensity to decrease with the square of distance (inverse square law). Low frequencies, including F0, propagate less directionally and dissipate more rapidly at social distances than mid and upper harmonics. The result: the harmonic energy that reaches a listener at 2–4 meters contains the overtone structure of the voice but has lost much of the F0 energy that defines intonation melody.</p>
 
-      <h3>Acoustic physics of intonation pitch</h3>
-      <p>The fundamental frequency F0 of human speech ranges 80-250 Hz in adult voices. These low frequencies exhibit spherical propagation with minimal beaming characteristics due to wavelengths of 1.4-4.3 meters. At distances beyond 1-1.5 meters, the fundamental's sound pressure level (SPL) decreases approximately 6 dB per doubling of distance, rendering it effectively inaudible above background noise in typical environments by ~2 meters.</p>
-      <p>Harmonic content (F1, F2, F3, etc.) with frequencies above 1 kHz exhibits greater directivity and maintains sufficient SPL at social distances to support speech intelligibility and emotional perception in typical listeners.</p>
+    <h3 style="margin:2rem 0 1rem;">The IA mechanism</h3>
+    <p>Intonation Augmentation captures near-field vocal signal (where F0 is present) via a pickup positioned close to the speaker, processes it to isolate and amplify intonation melody, and re-delivers it into the room acoustically via a speaker. The re-delivered signal is ambient — not directional or headphone-bound — so all participants in the room receive it simultaneously.</p>
+    <p>The processing chain targets F0 identification, intonation melody extraction, and level-calibrated acoustic reproduction. The goal is perceptual transparency: the delivered signal augments rather than replaces the room acoustics, and should not be identifiable as a separate source by listeners.</p>
 
-      <h3>Auditory reconstruction and variability</h3>
-      <p>The auditory system reconstructs F0 from the harmonic series when the fundamental is absent — the Residue Pitch phenomenon. Accuracy of reconstruction depends on: harmonic spacing, noise floor, listener neural processing efficiency, and individual differences in pitch perception circuits.</p>
-      <p>Variability in reconstruction accuracy correlates with (but is not identical to) conditions including auditory processing disorder, certain neurodevelopmental profiles, and individual differences in cochlear transduction. The mechanisms remain incompletely characterized.</p>
+    <table class="spec-table" style="margin-top:2rem;">
+      <tr><td>target frequency range</td><td>F0 and low harmonics (85–500 Hz approx)</td></tr>
+      <tr><td>delivery method</td><td>acoustic (room speaker, not headphone)</td></tr>
+      <tr><td>cable length — home</td><td>3m (processor to speaker)</td></tr>
+      <tr><td>cable length — go</td><td>50cm</td></tr>
+      <tr><td>power — home</td><td>USB (wall cube included)</td></tr>
+      <tr><td>power — go</td><td>USB (power bank included)</td></tr>
+      <tr><td>patent</td><td>filed</td></tr>
+    </table>
 
-      <h3>Intonation Augmentation implementation</h3>
-      <p>Real-time analysis: Continuous spectral decomposition of input signal; tracking of fundamental frequency via autocorrelation or cepstral analysis. Augmentation: Synthesis of F0 component via band-limited oscillator; dynamic amplitude adjustment to maintain natural acoustic balance. Output: Local room playback via compact loudspeaker positioned to deliver augmented F0 uniformly throughout listening space.</p>
-      <p>Processing latency: &lt;50ms; harmonic distortion: &lt;1%; frequency accuracy: ±2 Hz.</p>
+    <div class="callout callout--purple" style="margin-top:2rem;">
+      <p><strong>The broadcast voice observation:</strong> FM radio announcers use close-miced techniques that capture very high levels of low-frequency energy — far more than Amevoca delivers. This broadcast voice is universally described as soothing and calming. If low-frequency sound intrinsically triggered stress (as some polyvagal accounts suggest), broadcast voice would be alarming. It isn't. Our hypothesis: the issue is not low-frequency sound per se, but <em>unidentified</em> low-frequency sound. Intonation Augmentation delivers intonation melody, enabling source identification — and an identified source does not trigger threat response.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <h2>For researchers and clinicians</h2>
-    <div class="science-section">
-      <p class="level-intro">If you work in audiology, speech science, neurology, or clinical research.</p>
+<!-- LEVEL 3: NEUROSCIENCE -->
+<section class="sec" id="neuroscience">
+  <div class="wrap">
+    <span class="label"><span class="label-num">03 —</span> for the neuroscience-minded</span>
+    <h2>Nascent circuits, individual variation, and polyvagal contrast.</h2>
+    <p style="margin:1.25rem 0;">Our working model proposes that a subset of people possess what we term "nascent neural circuits" — neural architecture primed to process intonation pitch information, but which has never been adequately stimulated because the signal has never been present in normal social conversation.</p>
+    <p>These circuits are not absent or damaged. They are underdeveloped through lack of input. Amevoca is not recuperative — it does not attempt to restore a capacity that existed and was lost. It is enabling: providing the stimulus that was never previously available, allowing these circuits to engage and develop.</p>
 
-      <h3>Fundamental frequency perception and Missing Fundamental Illusion</h3>
-      <p>The pitch of a complex tone with absent fundamental is determined by the pattern and spacing of harmonics (virtual pitch, Terhardt et al.). MFI robustness varies significantly across populations. Individuals with atypical auditory processing, including those with APD, autism spectrum presentation, or certain central auditory processing patterns, demonstrate reduced accuracy in F0 reconstruction from harmonic series alone.</p>
-      <p>Relevant literature: Houtsma & Smurzynski (1990) on optimal harmonic spacing; Deutsch et al. on pitch perception variability; recent work by Zuk et al. on neurodevelopmental variation in pitch processing.</p>
+    <h3 style="margin:2rem 0 1rem;">Individual neural architecture variation</h3>
+    <p>The reliability of MFI reconstruction varies substantially between individuals. This variation is not fully explained by standard audiological measures (pure-tone audiometry, for example, does not assess MFI reconstruction reliability). The <a href="listening-test.html">Amevoca listening test</a> is a validated psychoacoustic instrument designed to assess this specifically.</p>
+    <p>Variation in reconstruction reliability likely has multiple sources: genetic factors affecting auditory cortex organization, developmental history of acoustic exposure, and potentially neurological variation in how the auditory-limbic pathway processes prosodic information.</p>
 
-      <h3>Clinical relevance of intonation perception</h3>
-      <p>Accurate intonation perception contributes to emotional prosody perception — a dimension distinct from speech intelligibility. Individuals with reduced intonation perception accuracy experience systematic misinterpretation of emotional content, contributing to communication difficulties and social friction independent of language comprehension or articulation abilities.</p>
-      <p>This mechanism may partially account for the social communication challenges observed in subsets of populations with autism, social anxiety, and certain central auditory processing profiles.</p>
+    <h3 style="margin:2rem 0 1rem;">Contrast with polyvagal approaches</h3>
+    <p>Polyvagal-based auditory interventions (e.g., Forbrain and related approaches) target nervous system stress response via bone conduction delivery of modulated sound. The proposed mechanism is direct vagal modulation.</p>
+    <p>Our approach targets a different layer: intonation melody identification, not nervous system state. We hypothesize these address distinct populations and distinct mechanisms — not the same challenge via different paths.</p>
+    <p>The sleep observation from early users (urban sounds ceasing to trigger wakefulness) is consistent with a threat-identification account: when intonation melody is present, previously ambiguous low-frequency percepts become identifiable as human-sourced and non-threatening. This is distinct from a nervous system regulation account.</p>
+    <p>We welcome rigorous examination of both hypotheses. We may be wrong about the mechanism. We are confident the effect is real.</p>
 
-      <h3>Amevoca as psychoacoustic intervention</h3>
-      <p>Amevoca provides augmented access to F0 information without requiring behavioral retraining. It addresses the auditory signal directly rather than via compensation or strategy development. Preliminary two-year outcomes in early-user cohort (n=8) suggest sustained improvement in self-reported communication clarity, reduced perceived social friction, and stable habituation to augmented signal.</p>
-      <p>Formal efficacy studies warranted. Mechanism appears orthogonal to existing interventions for auditory processing or social communication difficulties.</p>
-
-      <h3>Potential research directions</h3>
-      <p>Comparative study of intonation perception accuracy across neurodevelopmental populations. Longitudinal analysis of communication outcomes with augmented F0 delivery. Investigation of neuroplasticity effects with sustained augmentation exposure. Cross-cultural variation in optimal augmentation parameters.</p>
+    <div class="callout" style="margin-top:2rem;">
+      <p><strong>Research collaboration:</strong> We are seeking collaborators in audiology, neuroscience, SLP, psychoacoustics, and polyvagal research. We offer anonymous aggregated test data, access to IA research, co-authorship opportunities, and collaborative research design. Contact: <a href="mailto:eric@freudensong.com">eric@freudensong.com</a> — subject: "Research Collaboration Interest — [your field]"</p>
     </div>
-  </section>
 
-  <section style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; margin-top: 3rem;">
-    <h3 style="margin-top: 0;">Interested in collaboration or research?</h3>
-    <p style="margin-bottom: 0;">Email <a href="mailto:eric@freudensong.com" style="color: var(--accent); font-weight: 500;">eric@freudensong.com</a> to discuss potential partnerships, study design, or data sharing.</p>
-  </section>
+    <div class="btns mt">
+      <a class="btn btn--primary" href="listening-test.html">take the listening test</a>
+      <a class="btn btn--outline" href="other-approaches.html">other approaches</a>
+      <a class="btn btn--outline" href="preorder.html">pre-order</a>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Learn</h4>
-        <a href="why-it-works.html">Why it works</a>
-        <a href="science.html">Science deep dive</a>
-        <a href="founder-story.html">Founder story</a>
-      </div>
-      <div class="footer-section">
-        <h4>Explore</h4>
-        <a href="experiences.html">Real experiences</a>
-        <a href="products.html">Products</a>
-        <a href="listening-test.html">Listening test</a>
-      </div>
-      <div class="footer-section">
-        <h4>Get Started</h4>
-        <a href="pre-order.html">Pre-order</a>
-        <a href="faq.html">FAQ</a>
-        <a href="mailto:eric@freudensong.com">Contact</a>
-      </div>
+<footer class="foot">
+  <div class="foot__inner">
+    <ul class="foot__links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="why-it-works.html">why it works</a></li>
+      <li><a href="science.html">science</a></li>
+      <li><a href="experiences.html">experiences</a></li>
+      <li><a href="founder-story.html">our story</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="listening-test.html">listening test</a></li>
+      <li><a href="other-approaches.html">other approaches</a></li>
+      <li><a href="faq.html">faq</a></li>
+      <li><a href="preorder.html">pre-order</a></li>
+    </ul>
+    <div class="foot__copy">
+      <p>questions → <a href="mailto:eric@freudensong.com">eric@freudensong.com</a><br>
+      we read every email. reply within 48 hours.</p>
+      <br>
+      <p>amevoca™ and love your voice™ are trademarks<br>
+      of freudensong llc. el paso, tx.</p>
     </div>
-    <div style="max-width: 1200px; margin: 2rem auto 0; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--text-muted);">
-      <p>&copy; 2026 Freudensong LLC. All rights reserved.</p>
-      <p style="font-size: 11px; margin-top: 0.75rem;">Amevoca™ and Love your voice™ are trademarks of Freudensong LLC.</p>
-      <p style="font-size: 11px; margin-top: 0.75rem; color: var(--accent);">Amevoca: from Latin <em>ame</em> (love) + <em>voca</em> (voice) = love your voice</p>
-    </div>
-  </footer>
+  </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pre-order — amevoca</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .order-panel {
+      border: 1px solid var(--bg-rule);
+      padding: 2rem;
+      border-radius: var(--r);
+      margin-bottom: 1.5rem;
+    }
+    .order-panel h3 { margin-bottom: .25rem; }
+    .order-panel .price-lg {
+      font-family: var(--serif);
+      font-size: 2.2rem;
+      margin: .5rem 0 .25rem;
+      line-height: 1;
+    }
+    .order-panel .price-detail {
+      font-family: var(--mono);
+      font-size: .72rem;
+      color: var(--text-faint);
+      margin-bottom: 1.5rem;
+    }
+    .radio-option {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      padding: .85rem 1rem;
+      border: 1px solid var(--bg-rule);
+      border-radius: var(--r);
+      cursor: pointer;
+      margin-bottom: .5rem;
+      transition: border-color .15s;
+    }
+    .radio-option:hover { border-color: var(--accent); }
+    .radio-option input { margin-top: .2rem; flex-shrink: 0; accent-color: var(--accent); }
+    .radio-option .opt-label {
+      font-weight: 500;
+      font-size: .95rem;
+    }
+    .radio-option .opt-note {
+      font-family: var(--mono);
+      font-size: .7rem;
+      color: var(--text-faint);
+      margin-top: .15rem;
+    }
+    .field {
+      margin-bottom: 1rem;
+    }
+    .field label {
+      display: block;
+      font-family: var(--mono);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: .4rem;
+    }
+    .field input {
+      width: 100%;
+      padding: .65rem .85rem;
+      border: 1px solid var(--bg-rule);
+      border-radius: var(--r);
+      font-family: var(--sans);
+      font-size: .95rem;
+      background: var(--white);
+      color: var(--text);
+      transition: border-color .15s;
+    }
+    .field input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">
+      <svg width="64" height="26" viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 120 Q90 60 120 120 Q150 180 180 120 Q210 60 240 120 Q270 180 300 120" stroke="#AFA9EC" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <path d="M300 120 Q330 60 360 120 Q390 180 420 120" stroke="#7F77DD" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <text x="458" y="148" font-family="Georgia,serif" font-size="112" fill="#1A1A18">a</text>
+      </svg>
+      <span class="nav__wordmark">amevoca</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="why-it-works.html">why it works</a></li>
+      <li><a href="science.html">science</a></li>
+      <li><a href="experiences.html">experiences</a></li>
+      <li><a href="founder-story.html">our story</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="listening-test.html">listening test</a></li>
+      <li><a href="faq.html">faq</a></li>
+    </ul>
+    <a class="nav__order" href="preorder.html">pre-order</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="label"><span class="label-num">—</span> amevoca / pre-order</span>
+    <h1>You're in the right place.</h1>
+    <p class="sub">First batch: 25 units. Made to order. Ships in four weeks. Your deposit reserves your unit and covers parts ordered that week.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="grid-2" style="align-items:start;">
+
+      <!-- Order form -->
+      <div>
+        <span class="label"><span class="label-num">01 —</span> select your product</span>
+
+        <div class="order-panel" style="margin-top:1.25rem;">
+          <img src="img/home-kit.jpg" alt="Amevoca Home" class="product-img" style="margin-bottom:1.25rem;border-radius:var(--r);">
+          <div class="product-block__name">amevoca home</div>
+          <div class="price-lg">$250</div>
+          <div class="price-detail">bookshelf speaker &nbsp;·&nbsp; 3m cable &nbsp;·&nbsp; USB wall power</div>
+          <label class="radio-option">
+            <input type="radio" name="product" value="home-deposit" checked>
+            <div>
+              <div class="opt-label">Deposit — $85 now</div>
+              <div class="opt-note">$165 due at ship &nbsp;·&nbsp; total $250</div>
+            </div>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="product" value="home-full">
+            <div>
+              <div class="opt-label">Full payment — $245</div>
+              <div class="opt-note">save $5 &nbsp;·&nbsp; pay once now</div>
+            </div>
+          </label>
+        </div>
+
+        <div class="order-panel">
+          <img src="img/go-kit.jpg" alt="Amevoca Go" class="product-img" style="margin-bottom:1.25rem;border-radius:var(--r);">
+          <div class="product-block__name">amevoca go</div>
+          <div class="price-lg">$220</div>
+          <div class="price-detail">compact speaker &nbsp;·&nbsp; 50cm cable &nbsp;·&nbsp; USB power bank</div>
+          <label class="radio-option">
+            <input type="radio" name="product" value="go-deposit">
+            <div>
+              <div class="opt-label">Deposit — $75 now</div>
+              <div class="opt-note">$145 due at ship &nbsp;·&nbsp; total $220</div>
+            </div>
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="product" value="go-full">
+            <div>
+              <div class="opt-label">Full payment — $215</div>
+              <div class="opt-note">save $5 &nbsp;·&nbsp; pay once now</div>
+            </div>
+          </label>
+        </div>
+
+        <span class="label" style="margin-top:2rem;"><span class="label-num">02 —</span> your information</span>
+        <div style="margin-top:1rem;">
+          <div class="field">
+            <label for="email">email address</label>
+            <input type="email" id="email" placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="name">name</label>
+            <input type="text" id="name" placeholder="Your name">
+          </div>
+        </div>
+
+        <div class="btns" style="margin-top:1.5rem;">
+          <a class="btn btn--primary" href="#">continue to payment</a>
+        </div>
+        <p style="margin-top:.75rem;font-family:var(--mono);font-size:.7rem;color:var(--text-faint);">you'll receive a confirmation email immediately. questions: <a href="mailto:eric@freudensong.com">eric@freudensong.com</a></p>
+      </div>
+
+      <!-- Timeline + context -->
+      <div>
+        <span class="label"><span class="label-num">03 —</span> what happens next</span>
+        <div class="steps" style="margin-top:1.25rem;">
+          <div class="step">
+            <div class="step__label">now</div>
+            <div class="step__body">
+              <h4>Deposit received</h4>
+              <p>Confirmation email sent. Your unit enters the queue.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__label">week 1</div>
+            <div class="step__body">
+              <h4>Parts ordered</h4>
+              <p>Your deposit covers components ordered that same week.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__label">weeks 1–3.5</div>
+            <div class="step__body">
+              <h4>Parts arrive</h4>
+              <p>Components sourced and delivered to assembly.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__label">week 3.5–4</div>
+            <div class="step__body">
+              <h4>Built, checked, shipped</h4>
+              <p>Balance payment requested at ship.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__label">by week 4</div>
+            <div class="step__body">
+              <h4>Delivered</h4>
+              <p>At your door. A note from Eric inside.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout" style="margin-top:2rem;">
+          <p><strong>Made to order.</strong> You fund production. We stay independent. No VC pressure. No overstock. Every unit is built for the person who ordered it.</p>
+        </div>
+
+        <div class="callout callout--purple" style="margin-top:1rem;">
+          <p><strong>First batch: 25 units combined.</strong> Home and Go. When this batch is gone, the next opens. We don't manufacture speculatively.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">04 —</span> privacy</span>
+    <h2>We collect what's needed. Nothing more.</h2>
+    <p style="margin:1.25rem 0;" class="muted">We're a small independent company. We don't want your data any more than you want us to have it.</p>
+
+    <div class="numbered">
+      <span class="numbered__n">01</span>
+      <div>
+        <h3>The website</h3>
+        <p>We collect your name, email address, and shipping information to process your order and get your unit to you. That's it. We don't run ad trackers. We don't sell or share your information.</p>
+      </div>
+    </div>
+    <div class="numbered">
+      <span class="numbered__n">02</span>
+      <div>
+        <h3>The device</h3>
+        <p>Amevoca processes sound acoustically in real time. It does not store audio. It does not transmit audio. It is not network-connected — there is no Wi-Fi, no Bluetooth, no cloud component of any kind. The sound in your room stays in your room.</p>
+      </div>
+    </div>
+    <div class="numbered">
+      <span class="numbered__n">03</span>
+      <div>
+        <h3>The listening test</h3>
+        <p>Anonymous. We generate a reference number locally — we have no way to connect it to you unless you choose to share it. No account required.</p>
+      </div>
+    </div>
+
+    <div class="callout callout--purple" style="margin-top:1rem;">
+      <p>No network connection isn't a constraint we work around. It's a design choice. A device in your home that processes conversation has no business on the internet.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">05 —</span> quick answers</span>
+    <div class="faq" style="margin-top:1.25rem;">
+      <details>
+        <summary>Can I return it?</summary>
+        <div class="ans"><p>Yes. If Amevoca isn't working for you, contact <a href="mailto:eric@freudensong.com">eric@freudensong.com</a> within 30 days of delivery. We'll work it out. We read every email.</p></div>
+      </details>
+      <details>
+        <summary>Is the deposit refundable if I change my mind?</summary>
+        <div class="ans"><p>Yes, until your parts are ordered (typically end of week 1). After that, parts are in transit and non-returnable to suppliers. Email us immediately if you need to cancel.</p></div>
+      </details>
+      <details>
+        <summary>When exactly will balance payment be requested?</summary>
+        <div class="ans"><p>When your unit ships — around week 3.5–4. We'll email you with the final amount and a payment link before it leaves.</p></div>
+      </details>
+      <details>
+        <summary>Does it come with any warranty?</summary>
+        <div class="ans"><p>Yes. We stand behind what we build. Contact eric@freudensong.com for any hardware issue within the first year.</p></div>
+      </details>
+    </div>
+    <p style="margin-top:1rem;"><a href="faq.html">all questions →</a></p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <ul class="foot__links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="why-it-works.html">why it works</a></li>
+      <li><a href="science.html">science</a></li>
+      <li><a href="experiences.html">experiences</a></li>
+      <li><a href="founder-story.html">our story</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="listening-test.html">listening test</a></li>
+      <li><a href="other-approaches.html">other approaches</a></li>
+      <li><a href="faq.html">faq</a></li>
+      <li><a href="preorder.html">pre-order</a></li>
+    </ul>
+    <div class="foot__copy">
+      <p>questions → <a href="mailto:eric@freudensong.com">eric@freudensong.com</a><br>
+      we read every email. reply within 48 hours.</p>
+      <br>
+      <p>amevoca™ and love your voice™ are trademarks<br>
+      of freudensong llc. el paso, tx.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
