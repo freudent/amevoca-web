@@ -1,0 +1,4 @@
+    <div style="max-width: 1200px; margin: 2rem auto 0; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--text-muted);">
+      <p>&copy; 2026 Freudensong LLC. All rights reserved.</p>
+      <p style="font-size: 11px; margin-top: 0.5rem;">Amevoca™ is a trademark of Freudensong LLC.</p>
+    </div>

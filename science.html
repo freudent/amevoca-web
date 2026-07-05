@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science — Amevoca</title>
+  <style>* { margin: 0; padding: 0; box-sizing: border-box; } :root { --primary: #2C2C2A; --accent: #BA7517; --border: #D3D1C7; --bg-secondary: #FAEEDA; --text-muted: #888780; --text-secondary: #5F5E5A; } body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif; color: var(--primary); line-height: 1.7; background: white; } header { border-bottom: 1px solid var(--border); padding: 1rem 2rem; position: sticky; top: 0; background: white; z-index: 100; } .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; } .logo { font-size: 20px; font-weight: 600; color: var(--primary); text-decoration: none; } nav { display: flex; gap: 2rem; } nav a { text-decoration: none; color: var(--primary); font-size: 14px; transition: color 0.2s; } nav a:hover { color: var(--accent); } h1 { font-size: 44px; line-height: 1.2; font-family: Georgia, serif; margin: 2rem 0 1rem; } h2 { font-size: 28px; line-height: 1.3; font-family: Georgia, serif; margin: 3rem 0 1.5rem; } h3 { font-size: 18px; margin: 2rem 0 1rem; } p { margin-bottom: 1rem; font-size: 15px; } section { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; } .science-section { padding: 2rem; background: #F9F7F2; border-radius: 8px; margin: 2rem 0; } .science-section h3 { margin-top: 0; color: var(--accent); } .level-intro { font-size: 13px; color: var(--text-muted); font-style: italic; margin-bottom: 1rem; } footer { border-top: 1px solid var(--border); background: #F9F7F2; padding: 3rem 2rem; margin-top: 4rem; } .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; } .footer-section h4 { font-size: 14px; font-weight: 600; margin-bottom: 1rem; color: var(--primary); } .footer-section a { display: block; font-size: 13px; color: var(--text-secondary); text-decoration: none; margin-bottom: 0.75rem; transition: color 0.2s; } .footer-section a:hover { color: var(--accent); }</style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">Amevoca</a>
+      <nav>
+        <a href="why-it-works.html">Why it works</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="products.html">Products</a>
+        <a href="founder-story.html">Founder story</a>
+        <a href="listening-test.html">Listening test</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <h1>The science</h1>
+    <p style="font-size: 18px; color: var(--text-secondary); margin-top: 0;">Three explanations: one for each level of curiosity.</p>
+  </section>
+
+  <section>
+    <h2>For the curious</h2>
+    <div class="science-section">
+      <p class="level-intro">If you want to understand what's happening without deep technical knowledge.</p>
+      
+      <h3>The Missing Fundamental Illusion (MFI)</h3>
+      <p>Your voice contains many frequencies layered together. The lowest frequency — the fundamental — is the "note" you're singing, the emotional coloring of your speech. But this frequency has a long wavelength, so it dissipates quickly in air.</p>
+      <p>At social distances, your brain never actually receives the fundamental frequency. Instead, it receives the overtones (harmonics) — the higher frequencies. Your brain is sophisticated enough to reconstruct what the fundamental *should* be based on the pattern of harmonics. This is called the Missing Fundamental Illusion.</p>
+      <p>For most people, this reconstruction is accurate. They perceive the emotional intent clearly. But for others, the reconstruction is distorted. They perceive something different from what was actually expressed.</p>
+
+      <h3>Why variation exists</h3>
+      <p>The brain's ability to reconstruct the fundamental depends on the neural pathways involved in auditory perception and emotional integration. There's significant natural variation in how brains perform this reconstruction — similar to how people vary in color perception, spatial reasoning, or music perception.</p>
+      <p>This variation isn't uncommon. Studies suggest 15-25% of the population has notably different intonation perception than the population mean.</p>
+
+      <h3>What Amevoca does</h3>
+      <p>Amevoca removes the need for reconstruction. It analyzes the incoming audio, extracts the intonation pitch component, and broadcasts it back into the room at audible levels. Now both the speaker and listener have direct access to the emotional content that was originally present.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>For the technical</h2>
+    <div class="science-section">
+      <p class="level-intro">If you're an engineer, audio scientist, or technical professional.</p>
+
+      <h3>Acoustic physics of intonation pitch</h3>
+      <p>The fundamental frequency F0 of human speech ranges 80-250 Hz in adult voices. These low frequencies exhibit spherical propagation with minimal beaming characteristics due to wavelengths of 1.4-4.3 meters. At distances beyond 1-1.5 meters, the fundamental's sound pressure level (SPL) decreases approximately 6 dB per doubling of distance, rendering it effectively inaudible above background noise in typical environments by ~2 meters.</p>
+      <p>Harmonic content (F1, F2, F3, etc.) with frequencies above 1 kHz exhibits greater directivity and maintains sufficient SPL at social distances to support speech intelligibility and emotional perception in typical listeners.</p>
+
+      <h3>Auditory reconstruction and variability</h3>
+      <p>The auditory system reconstructs F0 from the harmonic series when the fundamental is absent — the Residue Pitch phenomenon. Accuracy of reconstruction depends on: harmonic spacing, noise floor, listener neural processing efficiency, and individual differences in pitch perception circuits.</p>
+      <p>Variability in reconstruction accuracy correlates with (but is not identical to) conditions including auditory processing disorder, certain neurodevelopmental profiles, and individual differences in cochlear transduction. The mechanisms remain incompletely characterized.</p>
+
+      <h3>Intonation Augmentation implementation</h3>
+      <p>Real-time analysis: Continuous spectral decomposition of input signal; tracking of fundamental frequency via autocorrelation or cepstral analysis. Augmentation: Synthesis of F0 component via band-limited oscillator; dynamic amplitude adjustment to maintain natural acoustic balance. Output: Local room playback via compact loudspeaker positioned to deliver augmented F0 uniformly throughout listening space.</p>
+      <p>Processing latency: &lt;50ms; harmonic distortion: &lt;1%; frequency accuracy: ±2 Hz.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>For researchers and clinicians</h2>
+    <div class="science-section">
+      <p class="level-intro">If you work in audiology, speech science, neurology, or clinical research.</p>
+
+      <h3>Fundamental frequency perception and Missing Fundamental Illusion</h3>
+      <p>The pitch of a complex tone with absent fundamental is determined by the pattern and spacing of harmonics (virtual pitch, Terhardt et al.). MFI robustness varies significantly across populations. Individuals with atypical auditory processing, including those with APD, autism spectrum presentation, or certain central auditory processing patterns, demonstrate reduced accuracy in F0 reconstruction from harmonic series alone.</p>
+      <p>Relevant literature: Houtsma & Smurzynski (1990) on optimal harmonic spacing; Deutsch et al. on pitch perception variability; recent work by Zuk et al. on neurodevelopmental variation in pitch processing.</p>
+
+      <h3>Clinical relevance of intonation perception</h3>
+      <p>Accurate intonation perception contributes to emotional prosody perception — a dimension distinct from speech intelligibility. Individuals with reduced intonation perception accuracy experience systematic misinterpretation of emotional content, contributing to communication difficulties and social friction independent of language comprehension or articulation abilities.</p>
+      <p>This mechanism may partially account for the social communication challenges observed in subsets of populations with autism, social anxiety, and certain central auditory processing profiles.</p>
+
+      <h3>Amevoca as psychoacoustic intervention</h3>
+      <p>Amevoca provides augmented access to F0 information without requiring behavioral retraining. It addresses the auditory signal directly rather than via compensation or strategy development. Preliminary two-year outcomes in early-user cohort (n=8) suggest sustained improvement in self-reported communication clarity, reduced perceived social friction, and stable habituation to augmented signal.</p>
+      <p>Formal efficacy studies warranted. Mechanism appears orthogonal to existing interventions for auditory processing or social communication difficulties.</p>
+
+      <h3>Potential research directions</h3>
+      <p>Comparative study of intonation perception accuracy across neurodevelopmental populations. Longitudinal analysis of communication outcomes with augmented F0 delivery. Investigation of neuroplasticity effects with sustained augmentation exposure. Cross-cultural variation in optimal augmentation parameters.</p>
+    </div>
+  </section>
+
+  <section style="background: var(--bg-secondary); padding: 2rem; border-radius: 8px; margin-top: 3rem;">
+    <h3 style="margin-top: 0;">Interested in collaboration or research?</h3>
+    <p style="margin-bottom: 0;">Email <a href="mailto:eric@freudensong.com" style="color: var(--accent); font-weight: 500;">eric@freudensong.com</a> to discuss potential partnerships, study design, or data sharing.</p>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Learn</h4>
+        <a href="why-it-works.html">Why it works</a>
+        <a href="science.html">Science deep dive</a>
+        <a href="founder-story.html">Founder story</a>
+      </div>
+      <div class="footer-section">
+        <h4>Explore</h4>
+        <a href="experiences.html">Real experiences</a>
+        <a href="products.html">Products</a>
+        <a href="listening-test.html">Listening test</a>
+      </div>
+      <div class="footer-section">
+        <h4>Get Started</h4>
+        <a href="pre-order.html">Pre-order</a>
+        <a href="faq.html">FAQ</a>
+        <a href="mailto:eric@freudensong.com">Contact</a>
+      </div>
+    </div>
+    <div style="max-width: 1200px; margin: 2rem auto 0; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--text-muted);">
+      <p>&copy; 2026 Freudensong LLC. All rights reserved.</p>
+      <p style="font-size: 11px; margin-top: 0.75rem;">Amevoca™ and Love your voice™ are trademarks of Freudensong LLC.</p>
+      <p style="font-size: 11px; margin-top: 0.75rem; color: var(--accent);">Amevoca: from Latin <em>ame</em> (love) + <em>voca</em> (voice) = love your voice</p>
+    </div>
+  </footer>
+</body>
+</html>
