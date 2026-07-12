@@ -6,29 +6,6 @@
   <title>the illusion — resonero</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .dress-wrap {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin: 2rem 0;
-      align-items: start;
-    }
-    @media (max-width: 600px) { .dress-wrap { grid-template-columns: 1fr; } }
-    .dress-panel {
-      border: 1px solid var(--bg-rule);
-      border-radius: var(--r);
-      padding: 1.5rem;
-      text-align: center;
-    }
-    .dress-panel h4 { margin-bottom: .75rem; }
-    .dress-color {
-      display: inline-block;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      margin: .5rem;
-      border: 2px solid var(--bg-rule);
-    }
     .two-ways {
       counter-reset: ways;
       margin: 2rem 0;
@@ -98,19 +75,9 @@
     <h2>The dress.</h2>
     <p style="margin:1.25rem 0;">In 2015, a photograph of a dress divided the internet. Some people saw it as blue and black. Others saw it as white and gold. Neither group was wrong about their perception. Neither was lying. The same image, the same light, resolved differently in different visual systems — with complete confidence on both sides.</p>
 
-    <div class="dress-wrap">
-      <div class="dress-panel">
-        <h4>some saw</h4>
-        <div class="dress-color" style="background:#1a237e;"></div>
-        <div class="dress-color" style="background:#1a1a1a;"></div>
-        <p style="font-family:var(--mono);font-size:.78rem;color:var(--text-muted);margin-top:.75rem;">blue and black</p>
-      </div>
-      <div class="dress-panel">
-        <h4>others saw</h4>
-        <div class="dress-color" style="background:#e8e0cc;"></div>
-        <div class="dress-color" style="background:#c8a96e;"></div>
-        <p style="font-family:var(--mono);font-size:.78rem;color:var(--text-muted);margin-top:.75rem;">white and gold</p>
-      </div>
+    <div style="margin:1.5rem 0 2rem;max-width:520px;">
+      <img src="img/dress-illusion.jpg" alt="The dress — same photo, different eyes: white/gold or black/blue" class="product-img" style="border-radius:var(--r);">
+      <p class="img-caption">same photo. different eyes. neither is wrong.</p>
     </div>
 
     <p>The incredulity on both sides was the most revealing part. People couldn't believe others were genuinely seeing something different. It felt like direct perception — not interpretation, not reconstruction. Just what the dress <em>was</em>.</p>
