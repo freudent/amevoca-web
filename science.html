@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>science — amevoca</title>
+  <title>science — resonero</title>
   <link rel="stylesheet" href="style.css">
   <style>
     .depth-nav {
@@ -38,11 +38,12 @@
         <path d="M300 120 Q330 60 360 120 Q390 180 420 120" stroke="#7F77DD" stroke-width="20" fill="none" stroke-linecap="round"/>
         <text x="458" y="148" font-family="Georgia,serif" font-size="112" fill="#1A1A18">a</text>
       </svg>
-      <span class="nav__wordmark">amevoca</span>
+      <span class="nav__wordmark">resonero</span>
     </a>
     <ul class="nav__links">
       <li><a href="why-it-works.html">why it works</a></li>
       <li><a href="science.html">science</a></li>
+      <li><a href="research.html">research</a></li>
       <li><a href="experiences.html">experiences</a></li>
       <li><a href="founder-story.html">our story</a></li>
       <li><a href="products.html">products</a></li>
@@ -55,7 +56,7 @@
 
 <section class="hero">
   <div class="wrap">
-    <span class="label"><span class="label-num">—</span> amevoca / science</span>
+    <span class="label"><span class="label-num">—</span> resonero / science</span>
     <h1>Three depths.<br>Same mechanism.</h1>
     <p class="sub">Read at the level that matches your curiosity. Each section stands on its own.</p>
   </div>
@@ -77,9 +78,23 @@
   <div class="wrap">
     <span class="label"><span class="label-num">01 —</span> for the curious</span>
     <h2>The missing fundamental illusion.</h2>
-    <p style="margin:1.25rem 0;">When a sound source produces a fundamental pitch (the lowest frequency in a harmonic series), our auditory cortex can often reconstruct that pitch even when the fundamental itself is absent — inferring it from the harmonics that remain. This is the Missing Fundamental Illusion (MFI).</p>
-    <p>In everyday conversation, intonation melody rides on the fundamental pitch. At social distances, that fundamental dissipates. What arrives at the listener's ears is the harmonic stack — without the melodic information it once carried. The brain attempts reconstruction. Whether that reconstruction is accurate varies significantly between individuals.</p>
-    <p>Amevoca addresses this by delivering intonation melody back into the room acoustically — before reconstruction is necessary.</p>
+
+    <div style="margin:1.5rem 0 .75rem;">
+      <img src="img/perceptual-gap-diagram.jpg"
+           alt="Diagram: The Perceptual Gap — Why Face-to-Face Speech Loses What Media Preserves"
+           style="width:100%;border-radius:var(--r);display:block;">
+      <p style="font-family:var(--mono);font-size:.7rem;color:var(--text-faint);margin-top:.6rem;line-height:1.6;">
+        <strong style="color:var(--text-muted);">The perceptual gap: why face-to-face speech loses what media preserves.</strong>
+        H1/fundamental pitch is present and full-amplitude at the source (left) and attenuates relative to higher harmonics across social distance — arriving degraded or absent at the listener (right, "H1 absent at listener").
+        The brain's MFI reconstruction attempts to recover intonation melody from the surviving harmonic series; the question mark and "listener perception" label indicate that this reconstruction is unreliable for a significant subset of people.
+        Note: the bottom-right waveform cluster labels ("MFI Enhanced Signal," "Intonation Melody") depict the brain's reconstructed percept — not a clean signal arriving intact. For many listeners, that reconstruction is distorted or absent.
+        Illustration generated with Gemini; physics and labeling revised iteratively.
+      </p>
+    </div>
+
+    <p style="margin:1.25rem 0;">When a sound source produces a fundamental pitch (the lowest frequency in a harmonic series), the auditory pathway can often reconstruct that pitch even when the fundamental itself is absent — inferring it from the harmonics that remain. This is the Missing Fundamental Illusion (MFI). The reconstruction involves a complex interaction across multiple levels of the auditory system, from brainstem structures including the superior olivary complex through auditory cortex, likely with frontal involvement in voice identification. For people with impaired H1 perception, this pathway does not perform the reconstruction reliably — the failure point within the pathway is not yet well characterized.</p>
+    <p>In everyday conversation, intonation melody rides on the fundamental pitch. At social distances, that fundamental attenuates faster than the harmonics above it — arriving degraded or absent at the listener. What arrives at the listener's ears is the harmonic stack — without the melodic information it once carried. The brain attempts reconstruction. Whether that reconstruction is accurate varies significantly between individuals.</p>
+    <p>Resonero addresses this by delivering intonation melody back into the room acoustically — before reconstruction is necessary.</p>
 
     <div class="callout" style="margin-top:2rem;">
       <p><strong>Why it matters for communication:</strong> Intonation melody is the primary carrier of emotional meaning in speech. It's what distinguishes a sincere "thank you" from a sarcastic one; what signals a question from a statement; what carries warmth, frustration, care, or boredom. Without it, words are ambiguous.</p>
@@ -93,7 +108,7 @@
     <span class="label"><span class="label-num">02 —</span> for the technical</span>
     <h2>Signal, mechanism, and specifications.</h2>
     <p style="margin:1.25rem 0;">The human voice produces a complex harmonic series rooted at the fundamental frequency F0 — the instantaneous pitch produced by vocal fold vibration. F0 typically spans 85–255 Hz in adult speech, with the full harmonic series extending several kilohertz above it.</p>
-    <p>Spherical propagation causes sound intensity to decrease with the square of distance (inverse square law). Low frequencies, including F0, propagate less directionally and dissipate more rapidly at social distances than mid and upper harmonics. The result: the harmonic energy that reaches a listener at 2–4 meters contains the overtone structure of the voice but has lost much of the F0 energy that defines intonation melody.</p>
+    <p>H1 (F0) propagates spherically — omnidirectionally — while higher harmonics are progressively more directional, delivering a greater proportion of their energy toward the listener. Combined with the inverse square law reduction in intensity with distance, H1 attenuates faster relative to the harmonic series above it. The result: at 2–4 meters, the harmonic energy reaching the listener retains the overtone structure of the voice but has lost much of the H1 energy that defines intonation melody.</p>
 
     <h3 style="margin:2rem 0 1rem;">The IA mechanism</h3>
     <p>Intonation Augmentation captures near-field vocal signal (where F0 is present) via a pickup positioned close to the speaker, processes it to isolate and amplify intonation melody, and re-delivers it into the room acoustically via a speaker. The re-delivered signal is ambient — not directional or headphone-bound — so all participants in the room receive it simultaneously.</p>
@@ -110,7 +125,7 @@
     </table>
 
     <div class="callout callout--purple" style="margin-top:2rem;">
-      <p><strong>The broadcast voice observation:</strong> FM radio announcers use close-miced techniques that capture very high levels of low-frequency energy — far more than Amevoca delivers. This broadcast voice is universally described as soothing and calming. If low-frequency sound intrinsically triggered stress (as some polyvagal accounts suggest), broadcast voice would be alarming. It isn't. Our hypothesis: the issue is not low-frequency sound per se, but <em>unidentified</em> low-frequency sound. Intonation Augmentation delivers intonation melody, enabling source identification — and an identified source does not trigger threat response.</p>
+      <p><strong>The broadcast voice observation:</strong> FM radio announcers use close-miced techniques that capture very high levels of low-frequency energy — far more than Resonero delivers. This broadcast voice is universally described as soothing and calming. If low-frequency sound intrinsically triggered stress (as some polyvagal accounts suggest), broadcast voice would be alarming. It isn't. Our hypothesis: the issue is not low-frequency sound per se, but <em>unidentified</em> low-frequency sound. Intonation Augmentation delivers intonation melody, enabling source identification — and an identified source does not trigger threat response.</p>
     </div>
   </div>
 </section>
@@ -120,12 +135,16 @@
   <div class="wrap">
     <span class="label"><span class="label-num">03 —</span> for the neuroscience-minded</span>
     <h2>Nascent circuits, individual variation, and polyvagal contrast.</h2>
-    <p style="margin:1.25rem 0;">Our working model proposes that a subset of people possess what we term "nascent neural circuits" — neural architecture primed to process intonation pitch information, but which has never been adequately stimulated because the signal has never been present in normal social conversation.</p>
-    <p>These circuits are not absent or damaged. They are underdeveloped through lack of input. Amevoca is not recuperative — it does not attempt to restore a capacity that existed and was lost. It is enabling: providing the stimulus that was never previously available, allowing these circuits to engage and develop.</p>
+    <p style="margin:1.25rem 0;">Our working model proposes that a subset of people possess neural circuits primed to process intonation pitch information that are not reliably stimulated in face-to-face social speech — because H1 doesn't survive propagation from a human mouth at social distances. These circuits are stimulated in other contexts: close-miked broadcast voice, film, podcasts, intimate conversation at close range. The deficit is specific to social speech, not to auditory capacity generally.</p>
+    <p>The circuits are not absent or damaged — they engage in the media contexts above. What's missing is reliable engagement in social speech. Resonero provides exactly that: H1 at conversational distance, in the room, continuously. The same stimulus that film and radio deliver incidentally, delivered deliberately into the context that has always lacked it.</p>
+
+    <div class="callout" style="margin-top:2rem;">
+      <p><strong>A historical note.</strong> Reliable H1 reproduction in media is a post-1950s phenomenon — dependent on magnetic tape, FM broadcast, and high-fidelity loudspeakers capable of full-spectrum reproduction. Before that, electrical recording and AM radio had significant low-frequency rolloff that stripped H1 much as social distance does. Before electrical amplification entirely, the only contexts delivering reliable H1 were intimate distance and some close acoustic instruments. The neural circuits in question have had a media stimulus pathway for roughly 70 years — unevenly, depending on access, habits, and cultural context. For most of human history, face-to-face social speech was essentially the only H1 source available, and it fails at social distance.</p>
+    </div>
 
     <h3 style="margin:2rem 0 1rem;">Individual neural architecture variation</h3>
-    <p>The reliability of MFI reconstruction varies substantially between individuals. This variation is not fully explained by standard audiological measures (pure-tone audiometry, for example, does not assess MFI reconstruction reliability). The <a href="listening-test.html">Amevoca listening test</a> is a validated psychoacoustic instrument designed to assess this specifically.</p>
-    <p>Variation in reconstruction reliability likely has multiple sources: genetic factors affecting auditory cortex organization, developmental history of acoustic exposure, and potentially neurological variation in how the auditory-limbic pathway processes prosodic information.</p>
+    <p>The reliability of MFI reconstruction varies substantially between individuals. This variation is not fully explained by standard audiological measures (pure-tone audiometry, for example, does not assess MFI reconstruction reliability). The <a href="listening-test.html">Resonero listening test</a> is a validated psychoacoustic instrument designed to assess this specifically.</p>
+    <p>Variation in reconstruction reliability likely has multiple sources: genetic factors affecting auditory pathway organization at one or more stations, developmental history of acoustic exposure, and neurological variation across the pathway — from brainstem through cortex — in how periodicity pitch is extracted from harmonic information. The specific locus or loci of failure for impaired MFI perceivers are not yet well characterized in the literature.</p>
 
     <h3 style="margin:2rem 0 1rem;">Contrast with polyvagal approaches</h3>
     <p>Polyvagal-based auditory interventions (e.g., Forbrain and related approaches) target nervous system stress response via bone conduction delivery of modulated sound. The proposed mechanism is direct vagal modulation.</p>
@@ -134,7 +153,7 @@
     <p>We welcome rigorous examination of both hypotheses. We may be wrong about the mechanism. We are confident the effect is real.</p>
 
     <div class="callout" style="margin-top:2rem;">
-      <p><strong>Research collaboration:</strong> We are seeking collaborators in audiology, neuroscience, SLP, psychoacoustics, and polyvagal research. We offer anonymous aggregated test data, access to IA research, co-authorship opportunities, and collaborative research design. Contact: <a href="mailto:eric@freudensong.com">eric@freudensong.com</a> — subject: "Research Collaboration Interest — [your field]"</p>
+      <p><strong>Research collaboration:</strong> We are seeking collaborators in audiology, neuroscience, SLP, psychoacoustics, and polyvagal research. We offer anonymous aggregated test data, access to IA research, co-authorship opportunities, and collaborative research design. Contact: <a href="mailto:info@resonero.com">info@resonero.com</a> — subject: "Research Collaboration Interest — [your field]"</p>
     </div>
 
     <div class="btns mt">
@@ -145,12 +164,62 @@
   </div>
 </section>
 
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">04 —</span> the evidence base</span>
+    <h2>What we know. What we're finding out.</h2>
+    <p style="margin:1.25rem 0;">The psychoacoustic mechanism underlying Resonero is grounded in established science. The clinical and communicative outcomes evidence is being built now — through IRB-approved research at UTEP and collaboration with researchers across audiology, organizational behavior, and clinical practice.</p>
+    <div class="btns mt-sm">
+      <a class="btn btn--outline" href="research.html">research program →</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">05 —</span> references and further reading</span>
+    <h2>Foundational concepts and cited work.</h2>
+    <p style="margin:1.25rem 0 2rem;" class="muted">Citations marked [VERIFY] have been provided in good faith but should be confirmed before relying on them for scholarly purposes. The Asilomar citation is exact as provided by the authors.</p>
+
+    <table class="spec-table" style="font-family:var(--sans);font-size:.88rem;">
+      <tr>
+        <td style="color:var(--text-muted);width:30%;padding-right:2rem;vertical-align:top;">Missing Fundamental Illusion</td>
+        <td>The perceptual phenomenon by which the auditory system infers a missing fundamental pitch from its harmonics. Foundational work: <span style="font-family:var(--mono);font-size:.8rem;">Licklider, J.C.R. (1954). "Periodicity" pitch and "place" pitch. Journal of the Acoustical Society of America. [VERIFY: author and date HIGH confidence; journal and title MED]</span></td>
+      </tr>
+      <tr>
+        <td style="color:var(--text-muted);padding-right:2rem;vertical-align:top;">H1 attenuation / inverse square law</td>
+        <td>Sound intensity decreases with the square of distance from the source. Low frequencies, including H1, propagate less directionally and are more susceptible to room and distance attenuation than higher harmonics. Standard acoustics. See any graduate-level acoustics text, e.g. <span style="font-family:var(--mono);font-size:.8rem;">Kuttruff, H. — Room Acoustics. [VERIFY: author HIGH; specific edition UNKNOWN]</span></td>
+      </tr>
+      <tr>
+        <td style="color:var(--text-muted);padding-right:2rem;vertical-align:top;">Auditory masking models</td>
+        <td>The argument that H1 at socially-attenuated levels is rendered inaudible by higher harmonics draws on established masking models cited in the Asilomar paper. See that paper's reference list for the specific models used.</td>
+      </tr>
+      <tr>
+        <td style="color:var(--text-muted);padding-right:2rem;vertical-align:top;">Intonation Augmentation — published work</td>
+        <td><span style="font-family:var(--mono);font-size:.8rem;">K. Moreno, N. Rovelli, C. Lauter and E. Freudenthal, "Intonation: Barely audible sounds that normies hallucinate," 2025 59th Asilomar Conference on Signals, Systems, and Computers, Pacific Grove, CA, USA, 2025, pp. 290–293. doi: <a href="https://doi.org/10.1109/IEEECONF67917.2025.11443681">10.1109/IEEECONF67917.2025.11443681</a></span></td>
+      </tr>
+      <tr>
+        <td style="color:var(--text-muted);padding-right:2rem;vertical-align:top;">Prosody and emotional communication</td>
+        <td>The role of fundamental frequency in conveying emotional meaning in speech is well-documented in the prosody literature. Key researchers include <span style="font-family:var(--mono);font-size:.8rem;">Scherer, K.R. [VERIFY: HIGH confidence on researcher; specific papers UNKNOWN without lookup]</span> and the broader field of affective prosody.</td>
+      </tr>
+    </table>
+
+    <div class="callout" style="margin-top:2rem;">
+      <p>If you are a researcher who sees errors, omissions, or mischaracterizations in how we've described the underlying science, please contact <a href="mailto:efreudenthal@utep.edu">efreudenthal@utep.edu</a>. We'd rather be corrected than wrong.</p>
+    </div>
+  </div>
+</section>
+
+
 <footer class="foot">
   <div class="foot__inner">
     <ul class="foot__links">
       <li><a href="index.html">home</a></li>
       <li><a href="why-it-works.html">why it works</a></li>
       <li><a href="science.html">science</a></li>
+      <li><a href="research.html">research</a></li>
+      <li><a href="research.html">research</a></li>
       <li><a href="experiences.html">experiences</a></li>
       <li><a href="founder-story.html">our story</a></li>
       <li><a href="products.html">products</a></li>
@@ -160,10 +229,10 @@
       <li><a href="preorder.html">pre-order</a></li>
     </ul>
     <div class="foot__copy">
-      <p>questions → <a href="mailto:eric@freudensong.com">eric@freudensong.com</a><br>
+      <p>questions → <a href="mailto:info@resonero.com">info@resonero.com</a><br>
       we read every email. reply within 48 hours.</p>
       <br>
-      <p>amevoca™ and love your voice™ are trademarks<br>
+      <p>resonero™ and love your voice™ are trademarks<br>
       of freudensong llc. el paso, tx.</p>
     </div>
   </div>
