@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>the illusion — resonero</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .dress-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin: 2rem 0;
+      align-items: start;
+    }
+    @media (max-width: 600px) { .dress-wrap { grid-template-columns: 1fr; } }
+    .dress-panel {
+      border: 1px solid var(--bg-rule);
+      border-radius: var(--r);
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .dress-panel h4 { margin-bottom: .75rem; }
+    .dress-color {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin: .5rem;
+      border: 2px solid var(--bg-rule);
+    }
+    .two-ways {
+      counter-reset: ways;
+      margin: 2rem 0;
+    }
+    .two-ways-item {
+      display: grid;
+      grid-template-columns: 5rem 1fr;
+      gap: 1rem;
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--bg-rule);
+    }
+    .two-ways-item:last-child { border-bottom: 1px solid var(--bg-rule); }
+    .two-ways-label {
+      font-family: var(--mono);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      padding-top: .2rem;
+    }
+    .two-ways-body h4 { margin-bottom: .5rem; font-family: var(--sans); font-size: .95rem; font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--text); }
+    .two-ways-body p { color: var(--text-muted); font-size: .95rem; margin: 0; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">
+      <svg width="64" height="26" viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 120 Q90 60 120 120 Q150 180 180 120 Q210 60 240 120 Q270 180 300 120" stroke="#AFA9EC" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <path d="M300 120 Q330 60 360 120 Q390 180 420 120" stroke="#7F77DD" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <text x="458" y="148" font-family="Georgia,serif" font-size="112" fill="#1A1A18">a</text>
+      </svg>
+      <span class="nav__wordmark">resonero</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="why-it-works.html">why it works</a></li>
+      <li><a href="science.html">science</a></li>
+      <li><a href="research.html">research</a></li>
+      <li><a href="experiences.html">experiences</a></li>
+      <li><a href="founder-story.html">our story</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="illusion.html">the illusion</a></li>
+      <li><a href="faq.html">faq</a></li>
+    </ul>
+    <a class="nav__order" href="preorder.html">pre-order</a>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="label"><span class="label-num">—</span> resonero / the illusion</span>
+    <h1>Two people. Same voice.<br>Different perception.</h1>
+    <p class="sub">This page demonstrates the Missing Fundamental Illusion — the perceptual phenomenon at the heart of why some people mishear emotional intent in conversation, and why Resonero helps.</p>
+  </div>
+</section>
+
+
+<!-- 01 THE DRESS -->
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">01 —</span> you've seen this before</span>
+    <h2>The dress.</h2>
+    <p style="margin:1.25rem 0;">In 2015, a photograph of a dress divided the internet. Some people saw it as blue and black. Others saw it as white and gold. Neither group was wrong about their perception. Neither was lying. The same image, the same light, resolved differently in different visual systems — with complete confidence on both sides.</p>
+
+    <div class="dress-wrap">
+      <div class="dress-panel">
+        <h4>some saw</h4>
+        <div class="dress-color" style="background:#1a237e;"></div>
+        <div class="dress-color" style="background:#1a1a1a;"></div>
+        <p style="font-family:var(--mono);font-size:.78rem;color:var(--text-muted);margin-top:.75rem;">blue and black</p>
+      </div>
+      <div class="dress-panel">
+        <h4>others saw</h4>
+        <div class="dress-color" style="background:#e8e0cc;"></div>
+        <div class="dress-color" style="background:#c8a96e;"></div>
+        <p style="font-family:var(--mono);font-size:.78rem;color:var(--text-muted);margin-top:.75rem;">white and gold</p>
+      </div>
+    </div>
+
+    <p>The incredulity on both sides was the most revealing part. People couldn't believe others were genuinely seeing something different. It felt like direct perception — not interpretation, not reconstruction. Just what the dress <em>was</em>.</p>
+
+    <div class="callout callout--purple" style="margin-top:1.5rem;">
+      <p>The same thing happens with voice — and it has consequences that a dress never does. Two people hear the same voice. One hears warmth. One hears flatness. Both are certain. Neither is lying. The signal was ambiguous, and their auditory systems resolved it differently.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- 02 TWO WAYS OF HEARING -->
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">02 —</span> two ways of hearing</span>
+    <h2>Everyone hears voice as a mix of frequencies.<br>Not everyone hears the same pitch.</h2>
+    <p style="margin:1.25rem 0;">Your voice is a harmonic series — a stack of frequencies, each at a precise multiple of the lowest one. That lowest frequency is your fundamental pitch (H1): the note your vocal cords produce. Above it sit the harmonics, progressively higher and — at social distances — progressively louder relative to H1.</p>
+
+    <div class="two-ways">
+      <div class="two-ways-item">
+        <div class="two-ways-label">spectral<br>listening</div>
+        <div class="two-ways-body">
+          <h4>Hearing the harmonic mix as it arrives</h4>
+          <p>At social distances, H1 has attenuated relative to higher harmonics. A spectral listener hears the voice as it actually arrives — with the harmonic series dominant. The pitch they perceive reflects what's physically present in the signal.</p>
+        </div>
+      </div>
+      <div class="two-ways-item">
+        <div class="two-ways-label">fundamental<br>listening</div>
+        <div class="two-ways-body">
+          <h4>Reconstructing a phantom pitch from harmonics</h4>
+          <p>The Missing Fundamental Illusion (MFI) causes some listeners to reconstruct H1 — hearing a pitch that isn't physically present in the arriving signal, inferred from the harmonic structure above it. For these listeners, the voice sounds as if heard at intimate range, with full intonation melody intact.</p>
+        </div>
+      </div>
+    </div>
+
+    <p>This means two people in the same room can hear the same voice at the same moment and perceive different pitch sequences, different loudness contours, different syllable stress — and therefore different emotional intent.</p>
+
+    <div class="callout" style="margin-top:1.5rem;">
+      <p><strong>The recording engineer observation.</strong> Close-miking — placing microphones near speakers' mouths — captures H1 at full strength, reliably eliciting fundamental listening in the audience. This is standard practice in recording, broadcasting, and film. It has inadvertently created a widespread assumption that fundamental listening is how everyone hears voice. It isn't. In natural social conversation, at social distances, it depends entirely on each listener's auditory pathway.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- 03 ERIC'S VIDEO -->
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">03 —</span> hear it yourself</span>
+    <h2>Experience the illusion.</h2>
+    <p style="margin:1.25rem 0;">Eric demonstrates the Missing Fundamental Illusion directly — playing the fundamental pitch alone, then its first two harmonics together. Most listeners hear a phantom lower pitch when the harmonics play. The pitch you hear reveals something about how your auditory pathway processes harmonic information.</p>
+    <p style="margin-bottom:1.5rem;">Watch and listen. Note what you hear when the harmonics play — and whether it matches the fundamental you heard alone.</p>
+
+    <div class="video-wrap" style="max-width:640px;margin-bottom:.75rem;">
+      <iframe src="https://www.youtube.com/embed/l5OSkt7rDIQ" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p class="video-caption">eric freudenthal — the missing fundamental illusion: demonstration and explanation</p>
+
+    <div class="callout callout--purple" style="margin-top:2rem;">
+      <p><strong>What your perception suggests.</strong> If the harmonics produced a phantom pitch that matched the fundamental — you likely have reliable MFI reconstruction. Intonation melody in conversation is probably reaching you clearly.<br><br>
+      If the phantom pitch felt different from the fundamental, or absent — your auditory pathway may be resolving harmonic information differently. This is one of the profiles Resonero is designed for: delivering H1 directly into the room, so reconstruction isn't required.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- 04 WHY IT MATTERS -->
+<section class="sec">
+  <div class="wrap">
+    <span class="label"><span class="label-num">04 —</span> why it matters</span>
+    <h2>Intonation melody is how you know what someone actually feels.</h2>
+    <p style="margin:1.25rem 0;">H1 — the fundamental pitch — carries intonation melody: the rising and falling pattern of pitch across speech that signals emotional meaning. It's what distinguishes a sincere "thank you" from a sarcastic one. What signals a question from a statement. What carries warmth, care, frustration, or boredom underneath the words.</p>
+    <p>At social distances, H1 attenuates faster than higher harmonics. Listeners who reconstruct it reliably via MFI continue to receive intonation melody even across a room. Listeners whose reconstruction is unreliable receive the harmonic series — and their brain does its best to infer what isn't there.</p>
+    <p>That inference can be wrong. And it feels like direct perception.</p>
+
+    <div class="callout" style="margin-top:1.5rem;">
+      <p>Resonero delivers H1 back into the room acoustically — with a slight delay that makes it perceptually separable from the direct voice, allowing effective delivery at low amplitude. Listeners who previously had to reconstruct now receive. Speakers who previously couldn't hear what they were producing now can.</p>
+    </div>
+
+    <div class="btns mt">
+      <a class="btn btn--primary" href="why-it-works.html">how resonero works</a>
+      <a class="btn btn--outline" href="science.html">the science</a>
+      <a class="btn btn--outline" href="preorder.html">pre-order</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- 05 IS YOURS SOCIALLY ADVANTAGED -->
+<section class="sec sec--dark">
+  <div class="wrap">
+    <span class="label">is yours socially advantaged?</span>
+    <h2>The illusion that helps — and the one that doesn't.</h2>
+    <p class="sub" style="margin:1rem 0 1.5rem;">Fundamental listening — when the phantom pitch matches H1 — is socially advantageous. You receive intonation melody clearly in conversation. Spectral listening, or MFI reconstruction that produces a different pitch than H1, leaves you working from an incomplete or distorted signal.</p>
+    <p style="color:rgba(255,255,255,.6);margin-bottom:2rem;">The video above gives you a direct experience of your own reconstruction. If you're uncertain what you heard, or want to discuss what it might mean for you, write to us.</p>
+    <div class="btns">
+      <a class="btn btn--primary" href="mailto:info@resonero.com">info@resonero.com</a>
+      <a class="btn btn--outline-light" href="experiences.html">see user experiences</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <ul class="foot__links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="why-it-works.html">why it works</a></li>
+      <li><a href="science.html">science</a></li>
+      <li><a href="research.html">research</a></li>
+      <li><a href="experiences.html">experiences</a></li>
+      <li><a href="founder-story.html">our story</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="illusion.html">the illusion</a></li>
+      <li><a href="other-approaches.html">other approaches</a></li>
+      <li><a href="faq.html">faq</a></li>
+      <li><a href="preorder.html">pre-order</a></li>
+    </ul>
+    <div class="foot__copy">
+      <p>questions → <a href="mailto:info@resonero.com">info@resonero.com</a><br>
+      we read every email. reply within 48 hours.</p>
+      <br>
+      <p>resonero™ and love your voice™ are trademarks<br>
+      of freudensong llc. el paso, tx.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
