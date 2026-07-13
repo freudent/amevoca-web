@@ -605,3 +605,33 @@ em { font-style: italic; }
   margin: 2rem 0;
 }
 @media (max-width: 680px) { .video-grid { grid-template-columns: 1fr; } }
+
+/* ── Homepage mobile fixes ───────────────────────────────── */
+@media (max-width: 800px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .hero-grid > div:last-child img {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .device-mini-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .device-mini-grid > div:last-child {
+    display: none;
+  }
+  .numbered {
+    grid-template-columns: 2rem 1fr !important;
+    gap: 0 1rem !important;
+  }
+  .product-block {
+    padding: 1.25rem !important;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr !important;
+  }
+}
