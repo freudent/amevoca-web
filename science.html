@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>science — resonero</title>
+  <title>science, in context — resonero</title>
   <link rel="stylesheet" href="style.css">
   <style>
     .depth-nav {
@@ -57,8 +57,8 @@
 <section class="hero">
   <div class="wrap">
     <span class="label"><span class="label-num">—</span> resonero / science</span>
-    <h1>Three depths.<br>Same mechanism.</h1>
-    <p class="sub">Read at the level that matches your curiosity. Each section stands on its own.</p>
+    <h1>The science, in context.</h1>
+    <p class="sub">How much do you want to know? Each section stands on its own.</p>
   </div>
 </section>
 
@@ -83,13 +83,7 @@
       <img src="img/perceptual-gap-diagram.jpg"
            alt="Diagram: The Perceptual Gap — Why Face-to-Face Speech Loses What Media Preserves"
            style="width:100%;border-radius:var(--r);display:block;">
-      <p style="font-family:var(--mono);font-size:.7rem;color:var(--text-faint);margin-top:.6rem;line-height:1.6;">
-        <strong style="color:var(--text-muted);">The perceptual gap: why face-to-face speech loses what media preserves.</strong>
-        H1/fundamental pitch is present and full-amplitude at the source (left) and attenuates relative to higher harmonics across social distance — arriving degraded or absent at the listener (right, "H1 absent at listener").
-        The brain's MFI reconstruction attempts to recover intonation melody from the surviving harmonic series; the question mark and "listener perception" label indicate that this reconstruction is unreliable for a significant subset of people.
-        Note: the bottom-right waveform cluster labels ("MFI Enhanced Signal," "Intonation Melody") depict the brain's reconstructed percept — not a clean signal arriving intact. For many listeners, that reconstruction is distorted or absent.
-        Illustration generated with Gemini; physics and labeling revised iteratively.
-      </p>
+<p style="font-family:var(--mono);font-size:.7rem;color:var(--text-faint);margin-top:.6rem;">Eric gave this page to Gemini and asked for a stylized graphic. It was too cute to bury.</p>
     </div>
 
     <p style="margin:1.25rem 0;">When a sound source produces a fundamental pitch (the lowest frequency in a harmonic series), the auditory pathway can often reconstruct that pitch even when the fundamental itself is absent — inferring it from the harmonics that remain. This is the Missing Fundamental Illusion (MFI). The reconstruction involves a complex interaction across multiple levels of the auditory system, from brainstem structures including the superior olivary complex through auditory cortex, likely with frontal involvement in voice identification. For people with impaired H1 perception, this pathway does not perform the reconstruction reliably — the failure point within the pathway is not yet well characterized.</p>
@@ -134,7 +128,7 @@
 <section class="sec" id="technical">
   <div class="wrap">
     <span class="label"><span class="label-num">02 —</span> for the technical</span>
-    <h2>Signal, mechanism, and specifications.</h2>
+    <h2>Signal and mechanism.</h2>
     <p style="margin:1.25rem 0;">The human voice produces a complex harmonic series rooted at the fundamental frequency F0 — the instantaneous pitch produced by vocal fold vibration. F0 typically spans 85–255 Hz in adult speech, with the full harmonic series extending several kilohertz above it.</p>
     <p>H1 (F0) propagates spherically — omnidirectionally — while higher harmonics are progressively more directional, delivering a greater proportion of their energy toward the listener. Combined with the inverse square law reduction in intensity with distance, H1 attenuates faster relative to the harmonic series above it. The result: at 2–4 meters, the harmonic energy reaching the listener retains the overtone structure of the voice but has lost much of the H1 energy that defines intonation melody.</p>
 
@@ -142,15 +136,7 @@
     <p>Intonation Augmentation captures near-field vocal signal (where F0 is present) via a pickup positioned close to the speaker, processes it to isolate and amplify intonation melody, and re-delivers it into the room acoustically via a speaker. The re-delivered signal is ambient — not directional or headphone-bound — so all participants in the room receive it simultaneously.</p>
     <p>The processing chain targets F0 identification, intonation melody extraction, and level-calibrated acoustic reproduction. The goal is perceptual transparency: the delivered signal augments rather than replaces the room acoustics, and should not be identifiable as a separate source by listeners.</p>
 
-    <table class="spec-table" style="margin-top:2rem;">
-      <tr><td>target frequency range</td><td>F0 and low harmonics (85–500 Hz approx)</td></tr>
-      <tr><td>delivery method</td><td>acoustic (room speaker, not headphone)</td></tr>
-      <tr><td>cable length — home</td><td>3m (processor to speaker)</td></tr>
-      <tr><td>cable length — go</td><td>50cm</td></tr>
-      <tr><td>power — home</td><td>USB (wall cube included)</td></tr>
-      <tr><td>power — go</td><td>USB (power bank included)</td></tr>
-      <tr><td>patent</td><td>filed</td></tr>
-    </table>
+    
 
     <div class="callout callout--purple" style="margin-top:2rem;">
       <p><strong>The broadcast voice observation:</strong> FM radio announcers use close-miced techniques that capture very high levels of low-frequency energy — far more than Resonero delivers. This broadcast voice is universally described as soothing and calming. If low-frequency sound intrinsically triggered stress (as some polyvagal accounts suggest), broadcast voice would be alarming. It isn't. Our hypothesis: the issue is not low-frequency sound per se, but <em>unidentified</em> low-frequency sound. Intonation Augmentation delivers intonation melody, enabling source identification — and an identified source does not trigger threat response.</p>
